@@ -1,0 +1,469 @@
+ .header-top {
+     background: #6D4AAE;
+     padding: 8px 0px;
+
+ }
+
+ .header-top .container p {
+     text-align: center;
+     color: white;
+     padding: 0px;
+     margin: 0px;
+     color: #fff;
+     font-size: 12px;
+     font-weight: 500;
+ }
+
+ .headerWrapperFixed{
+    background: #fff;
+    left: 0;
+    position: sticky;
+    top: 34px;
+    top: 0;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    z-index: 10000;
+ }
+
+ .headerWrapperFixed.fixed{
+    top:-134px;
+    box-shadow: 0 1px 3px #0000000f, 0 1px 2px #0000001f;
+ }
+
+ .header-wrapper{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    
+   
+ }
+
+ 
+ .location {
+     width: 180px;
+     padding: 10px;
+     border: 1px solid rgba(0, 0, 0, 0.1);
+ }
+
+ .location:hover {
+     cursor: pointer;
+ }
+
+
+ .container{
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+
+ 
+
+
+ .container .row .logoWrapper:hover {
+     cursor: pointer;
+ }
+
+
+ .loc-icon:hover {
+     background-color: rgb(221, 236, 241);
+     cursor: pointer;
+     border-radius: 50%;
+     color: blue !important;
+ }
+
+ .location select {
+     border: none;
+     outline: none;
+     width: 100%;
+     padding: 0px 10px;
+     justify-items: flex-start;
+     transition: all 0.3s ease;
+ }
+
+ .location section option {
+     font-size: 23px;
+     align-items: center;
+
+
+
+ }
+
+ .header .container .row {
+     display: flex;
+     flex-wrap: wrap;
+     margin-left: -15px;
+     margin-right: -15px;
+     align-items: center;
+
+ }
+
+
+ .header-wrapper .header {
+     height: auto;
+     padding: 25px 0;
+     width: 100%;
+     display: flex;
+     align-items: center;
+    
+    
+
+ }
+
+ .headerSearchWrapper {
+     width: 58%;
+
+ }
+
+ .headerSearchWrapper .headerSearch {
+     background: #e5e5e5;
+     border: 1px solid #0000000d;
+     border-radius: 5px;
+     height: 50px;
+     padding: 5px;
+     position: relative;
+     width: 90%;
+ }
+
+ .headerSearchWrapper .headerSearch input {
+     background: #0000 !important;
+     border: 0 !important;
+     color: #000000b3;
+     font-size: 16px;
+     height: 37px;
+     outline: none !important;
+     padding: 0 20px !important;
+     width: 100%;
+ }
+
+ .headerSearchWrapper .headerSearch Button {
+     border-radius: 50% !important;
+     color: #000;
+     height: 40px !important;
+     min-width: 40px !important;
+     position: absolute;
+     right: 10px;
+     border: none;
+     top: 5px;
+     width: 40px !important;
+     z-index: 100;
+
+ }
+
+
+
+
+ .part3 .btn-blue {
+
+     background: #6d4aae !important;
+     color: #fff !important;
+     font-weight: 600 !important;
+     padding: 5px 20px !important;
+     border-radius: 30px;
+     border: 0px;
+     text-transform: capitalize;
+ }
+
+
+ .cart {
+     position: relative;
+ }
+
+ .mobileCart{
+    position: relative;
+ }
+
+ .mobileCart Button{
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 50%;
+    background: #FFF1EE;
+    min-width: 0px;
+    border: 1px solid #ccc;
+  
+}
+ 
+.mobileCart .count{
+    background: #ea2b0f;
+    border-radius: 50%;
+    color: #fff;
+    height: 16px;
+    position: absolute;
+    right: -3px;
+    top: -9px;
+    width: 16px;
+}
+
+ .cart .count {
+     background: #ea2b0f;
+     border-radius: 50%;
+     color: #fff;
+     height: 20px;
+     position: absolute;
+     right: -4px;
+     top: -6px;
+     width: 20px;
+ }
+
+ .cart Button {
+     width: 45px !important;
+     height: 45px !important;
+     border-radius: 50%;
+     background: #FFF1EE;
+     min-width: 0px;
+     border: 1px solid #ccc;
+ }
+
+ .btnWrapper {
+
+     position: relative;
+ }
+
+
+ .btnWrapper .mainBtn {
+
+     background: #6d4aae;
+     border-radius: 30px !important;
+     padding: 10px 10px !important;
+     font-size: 12px;
+     color: white;
+     width: 180px;
+     font-weight: 600;
+ }
+
+ .btnWrapper Button .icon {
+     font-size: 16px !important;
+     font-weight: 700;
+ }
+
+ .open {
+     background: #fff;
+     border: 1px solid #0000001a;
+      height: auto!important;
+     left: 0;
+     opacity: 1!important;
+     padding: 15px 0;
+     position: absolute;
+     top: 130%;
+     transition: all .2s;
+     visibility: inherit!important;
+     width: 100%;
+     z-index: 100;
+ }
+
+ .navLeft{
+    flex: 0 0 17%;
+    max-width: 17%;
+ }
+  .navRight ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+  }
+
+  .logoWrapper.mobileMenu{
+    display: none!important;
+  }
+ 
+ .navSideBar {
+     background: #fff;
+     border: 1px solid #0000001a;
+     height: 0;
+     left: 0;
+     opacity: 0;
+     padding: 15px 0;
+     position: absolute;
+     top: 130%;
+     transition: all .2s;
+     visibility: hidden;
+     width: 100%;
+     z-index: 100;
+ }
+
+ .ul-list {
+     margin: 0px;
+     padding: 0px;
+ }
+
+ .ul-list li {
+     list-style: none;
+     padding: 0 10px;
+     width: 100% !important;
+     position: static;
+
+ }
+
+ .logoWrapper .mobileMenu {
+     font-size: 25px;
+     font-weight: 700;
+     color: #000;
+     display: none;
+ }
+
+ .ul-list li button {
+     width: 100% !important;
+     text-transform: capitalize;
+     text-decoration: none !important;
+     justify-content: flex-start;
+     text-align: left !important;
+     text-transform: capitalize !important;
+
+
+ }
+
+ .ul-list li button span:hover {
+     color: blueviolet !important;
+ }
+
+ .mobileCart{
+    display: none;
+ }
+
+.navRight{
+    flex: 0 0 83%;
+    max-width: 83%;
+}
+
+.navRight ul li Button{
+    padding: 8px 10px;
+}
+
+ .navRight ul li Button span{
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.8;
+ }
+
+ .navRight ul li Button:hover{
+      /* width: 100px; */
+       background-color: rgba(0, 0, 0,0.06);
+       border-radius:40px;
+ }
+
+ .cart .svg{
+    font-size: 23px;
+    color: black;
+     opacity: 0.8;
+     color: red;
+
+ }
+
+
+
+ @media (max-width: 768px) {
+
+     .container,
+     .res-full {
+         max-width: 100% !important;
+     }
+
+
+     .headerSearchWrapper {
+         display: none;
+     }
+
+     .location {
+         display: none !important;
+     }
+
+     .part3 .btn-blue {
+         display: none;
+     }
+
+     .header .container .row {
+         flex-wrap: nowrap;
+         width: 100% !important;
+         gap: 4px;
+         justify-content: center;
+     }
+
+     .part2 {
+        display: none!important;
+     }
+
+     .btnWrapper {
+         display: none;
+     }
+
+     
+    
+      .mobileMenu{
+        display: flex!important;
+         font-size: 28px!important;
+
+     }
+    .navLeft .navSideBar{
+         display: none;
+       
+     }
+
+     .mobileCart{
+        display: block;
+     }
+
+     .navLeft{
+        display: none;
+     }
+
+    
+
+     .logoWrapper{
+        width: 100%!important;
+        gap:50px;
+        justify-content: center;
+     }
+
+     .logoWrapper img{
+        width: 110px!important;
+     }
+      
+     .logoWrapper .cart Button{
+        font-size: 20px!important;
+     }
+     .cart .count{
+        width: 20px!important;
+        height: 20px!important;
+     }
+
+
+     .navRight{
+
+        width: 100% !important;
+        max-width: 100%!important;
+       
+     }
+
+     .navRight .list li Button span{
+         /* width: 70px!important; */
+         text-transform: capitalize;
+     }
+
+     .navRight ul{
+        /* display: block !important; */
+        margin-bottom: 0 !important;
+        overflow: scroll !important;
+        overflow-y: hidden !important;
+        white-space: nowrap !important;
+        width: 100% !important;
+        -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;
+          margin: auto!important;
+     }
+
+     .navRight ul li{
+        padding: 0 !important;
+        vertical-align: top !important;
+        /* width: -webkit-max-content !important; */
+        width: max-content !important;
+
+      }
+
+    
+
+
+ }
+
+
+ @media (min-width: 1300px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1280px;
+    }
+}

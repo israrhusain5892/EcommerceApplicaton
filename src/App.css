@@ -1,0 +1,20 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+   height: 6px !important;
+   width: 6px !important; 
+  
+}
+
+::-webkit-scrollbar-thumb {
+   background: blueviolet !important;
+   height: 8px!important;
+}
+
+::-webkit-scrollbar-track {
+   background: #0000 !important;
+}

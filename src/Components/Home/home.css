@@ -1,0 +1,505 @@
+:root {
+    --swiper-navigation-size: 20px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: black !important;
+    background: white;
+    border-radius: 50%;
+    width: 50px !important;
+    height: 50px !important;
+    font-weight: 800;
+
+
+}
+
+.swiper-button-next {
+    right: 40px !important;
+}
+
+.swiper-button-prev {
+    left: 40px !important;
+}
+
+.homeSlider {
+    height: 340px;
+    width: 100%;
+    /* margin-top: 210px !important; */
+    /* padding: 0px 24px; */
+    border-radius: 20px;
+}
+
+
+.homeSlider img {
+    padding: 0px 10px;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper {
+
+    height: 340px !important;
+
+}
+
+.item-container {
+    width: 147px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.cat-title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.cat-container {
+    /* display: block!important; */
+    /* overflow: scroll !important; */
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    width: 100% !important;
+    height: auto;
+}
+
+.cat-container .catSlider {
+    height: 120px !important;
+    /* overflow: hidden; */
+    width: 100%;
+
+}
+
+.catSlider .swiper-button-next {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 50px !important;
+    height: 60px !important;
+    border-radius: 5px !important;
+    padding: 10px !important;
+    z-index: 100;
+    top: 30px;
+    right: -20px !important;
+
+}
+
+
+
+.catSlider .swiper-button-prev {
+    left: -20px !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 50px !important;
+    height: 60px !important;
+    border-radius: 5px !important;
+    padding: 10px !important;
+    z-index: 100;
+    top: 30px;
+}
+
+.productSwiper {
+    height: auto !important;
+}
+
+.productSwiper .swiper-button-prev {
+    left: 5px !important;
+    top: 140px;
+}
+
+.productSwiper .swiper-button-next {
+    right: 10px !important;
+}
+
+.productSwiper .swiper-pagination-bullet {
+    display: none;
+}
+
+
+
+.cat-container .circle {
+    align-items: center;
+    border: 1px solid #0000001a;
+    border-radius: 10px;
+    display: flex;
+    min-height: 80px;
+    height: 100px;
+    justify-content: center;
+    /* box-shadow: 0px 0px 8px rgba(0,0,0,0.4); */
+    margin: auto;
+    overflow: hidden;
+    padding: 3px;
+    transition: all .2s ease-in-out;
+    min-width: 60px;
+    width: 80px;
+
+
+
+}
+
+.cat-container .circle:hover {
+    transform: scale(1.009);
+    transition: 0.3s;
+    /* box-shadow: 0px 0px 8px rgba(0,0,0,0.4); */
+    /* transform: translate3d(1px, 8px, 0px); */
+    transform: translateZ(100px) rotateX(10deg) rotateY(10deg);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.containerPopular {
+
+    width: 100% !important;
+
+
+
+}
+
+.popularText{
+    width:15%;
+}
+
+
+
+.cat-container .circle img {
+    background-size: cover;
+    width: 60%;
+
+}
+
+.cat-container .circle h6 {
+    color: #000 !important;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: .8;
+    padding-top: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+
+}
+
+.slick-prev {
+    z-index: 1000;
+    left: -38px;
+    top: 10px;
+}
+
+
+.popularHeader .navItem {
+    text-transform: capitalize !important;
+    text-decoration: none;
+    color: #00000c !important;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    /* display: block; */
+    height: 50px;
+    opacity: 0.8;
+    width: 90px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    /* Required for the ::after element */
+    cursor: pointer;
+    /* Pointer cursor for links */
+    transition: all 0.3s ease;
+    /* Smooth transition */
+}
+
+/* Underline effect using ::after */
+.popularHeader .navItem::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    /* Start with no underline */
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    /* Position slightly below the text */
+    background-color: rgb(25, 118, 210);
+    /* Underline color */
+    transition: 0.3s ease;
+    /* Smooth transition for underline */
+}
+
+/* When the link is active, the underline expands */
+.popularHeader .navItem.active::after {
+    width: 100% !important;
+    /* Full width underline on active link */
+}
+
+/* Style for the active link text */
+.popularHeader .navItem.active {
+    color: rgb(25, 118, 210) !important;
+    /* Change color when active */
+
+}
+
+
+
+.slick-prev {
+    color: black !important;
+    top: 20px !important;
+}
+
+.slick-next {
+    right: -4px;
+    z-index: 1000;
+    color: #000;
+
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 25px;
+    line-height: 1;
+    opacity: 0.9;
+    color: gray;
+
+    background: transparent;
+    z-index: 1000;
+
+}
+
+
+.popularHeading {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.text-light {
+    color: #8b8b8b !important;
+}
+
+.popularSwiper {
+    height: 70px !important;
+    width: 70% !important;
+}
+
+.popularHeader {
+    width: 69% !important;
+}
+
+.popularSlider{
+    width: 69%;
+}
+
+
+/* new product component section css */
+
+.productRow {
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+
+}
+
+ h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text-light{
+    font-size: 14px;
+    color: #8b8b8b;
+}
+ .box{
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+}
+ .box img{
+    height: auto;
+    width: 100%;
+    transition:all 0.3s;
+}
+
+.bannerSection .box img:hover{
+    transform: scale(1.08);
+}
+
+.bannerswiper{
+    height: 190px!important;
+}
+.bannerswiper .swiper-button-prev,.swiper-button-next{
+    top: 70px!important;
+    
+}
+.productSwiper .swiper-button-next{
+    top: 150px!important;
+}
+
+.productSwiper .swiper-button-prev{
+    top: 150px!important;
+}
+ .swiperBox{
+    width: 315px;
+}
+
+
+
+/* newsletter css */
+
+.newsletter{
+    height: auto;
+    position: relative;
+    padding: 60px 0px!important;
+    background: linear-gradient(to right, rgb(2, 27, 121), rgb(5, 117, 230));
+}
+
+.newsletter img{
+    width: 500px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+
+.newsletter .discount{
+    font-size: 18px;
+    margin: 10px 0 !important;
+}
+
+.newsletter p.text-light {
+    color: #fff !important;
+    font-size: 15px;
+    opacity: .7;
+}
+
+.newsletter h3{
+    font-size: 40px;
+    font-weight: 700;
+    color:white;
+}
+
+.newsletter .emailBtn{
+    width:90%!important;
+    padding:10px 0px;
+    box-shadow: 0px 0px 10px white,0px 0px 20px white;
+    border-radius: 10px;
+}
+
+.newsletter .emailBtn .emailIcon{
+    font-size: 30px;
+    opacity: 0.5;
+}
+@media(max-width:768px) {
+
+/* 
+    .productSwiper{
+        height: auto!important;
+    } */
+
+   /* .info{
+     margin-bottom: 30px;
+   } */
+
+   .imgRapper{
+    height: 170px!important;
+}
+
+
+    /* home.css */
+    .homeSlider {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100px;
+    }
+
+   .homeSlider .swiper {
+        height: 100px !important;
+    }
+
+    .homeSlider img {
+        width: 100%;
+        height: 100px;
+        border-radius: 20px;
+        padding: 0px 10px;
+    }
+
+    .swiper-button-next {
+        display: none !important;
+    }
+
+    .slick-prev,.slick-next{
+        display: none!important;
+    } 
+
+    .swiper-button-prev {
+        display: none !important;
+    }
+
+    .cat-container {
+        width: 100% !important;
+    }
+
+    .cat-container .circle {
+        width: 40px;
+        height: 50px;
+    }
+
+
+    .popularTitle{
+        width: 100%!important ;
+        /* text-align: center; */
+    }
+
+    .popularSlider{
+        width: 100%!important;
+    }
+
+    .popularHeader{
+        width:100%!important;
+        justify-content: center;
+       
+    }
+
+    .productRow{
+         
+        overflow-x: scroll!important;
+        -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;
+        width: 100%!important;
+        grid-template-columns: repeat(100000,1fr);
+    }
+    .productRow .productItem1{
+        width: 200px;
+    }
+
+    .bannerswiper .swiperBox{
+        width: 270px!important;
+    }
+
+}
+
+@media (min-width: 1300px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1280px;
+    }
+}
