@@ -13,6 +13,10 @@
     width: 100%;
 }
 
+
+
+
+
 .productItem .imgRapper{
     background: #fff;
     border-radius: 7px;
@@ -25,7 +29,13 @@
     /* background-position: cover; */
     object-fit: cover;
 }
-.productItem .imgRapper .img2{
+
+.productItem .img1{
+     object-fit: cover;
+     width: 100%;
+     height: auto;
+}
+.productItem .imgRapper .productImageWrapper .img2{
 
     left: 0;
     opacity: 0;
@@ -34,12 +44,25 @@
     transition: all .3s ease-in-out;
     width: 100%;
     z-index: 1000;
+    object-fit: cover;
 
 }
 
-.productItem .imgRapper:hover .img2{
+.productImageWrapper{
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: all .5s;
+    width: 100%;
+    z-index: 100;
+}
+
+.productItem .imgRapper:hover .productImageWrapper .img2{
     opacity: 1;
     transform: scale(1.08);
+    object-fit: cover;
 }
 
 .productItem .info{
@@ -104,13 +127,23 @@
       font-size: 12px;
  }
 
+ /* .imgRapper .img2{
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    z-index: 1000;
+ } */
+
  .imgRapper .imgWraper-label2{
     width: 45px;
       padding: 2px 4px;
       background: rgb(43, 190, 249);
       color: white;
       position: absolute;
-      z-index: 2;
+      z-index: 2000;
       left: 16px;
       text-align: center;
       top:20px;
@@ -128,9 +161,15 @@
     text-align: center!important;
     right:15px;
     color: #000;
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    font-weight: 700;
     font-size: 19px;
+    box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
     z-index: 4;
+ }
+ .expand:hover{
+    background: #DC3545;
+    color:white;
  }
 
   .heart{
@@ -141,11 +180,25 @@
     height: 35px;
      right: 14px;
      background-color: #fff;
+     box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
      text-align: center;
      font-size: 22px;
      border-radius: 50%;
-    
+     transition: all 0.3s;
 
+ }
+ .imgRapper:hover .expand{
+    z-index: 8888888;
+ }
+
+ .imgRapper:hover .heart{
+    opacity: 1;
+    z-index: 8888888;
+ }
+
+ .heart:hover{
+    background-color: #DC3545;
+    color:white;
  }
 
  @media(max-width:768px){

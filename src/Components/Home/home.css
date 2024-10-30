@@ -30,6 +30,9 @@
     border-radius: 20px;
 }
 
+.homeSlider .swiper .swiper-button-next{
+    margin-top: 90px;
+}
 
 .homeSlider img {
     padding: 0px 10px;
@@ -418,6 +421,15 @@
     height: 170px!important;
 }
 
+.newsletter{
+    width: 100%!important;
+}
+.newsletter .emailBtn{
+    width: 100%!important;
+}
+.newsletter .img{
+    display: none;
+}
 
     /* home.css */
     .homeSlider {

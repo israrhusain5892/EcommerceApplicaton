@@ -10,10 +10,16 @@ import FeatureProduct from '../../Components/Home/FeatureProduct';
 import BannerSection2 from '../../Components/Home/BannerSection2';
 import BeautyProduct from '../../Components/Home/BeautyProduct';
 import NewsLetter from '../../Components/Home/NewsLetter';
+import Footer from '../../Components/Footer';
+import Header from '../../Components/Header';
+import Layout from '../../Components/Layout';
 function Home() {
   return (
 
     <>
+    
+         {/* <Header /> */}
+         <Layout>
         <HomeSlider/>
          <FeatureCategorySection/>
           <PopularProduct/>
@@ -22,7 +28,10 @@ function Home() {
           <FeatureProduct/>
           <BannerSection2/>
           <BeautyProduct/>
-          <NewsLetter/>
+          {/* <NewsLetter/>
+          <Footer/> */}
+          </Layout>
+        
     </>
   )
 }

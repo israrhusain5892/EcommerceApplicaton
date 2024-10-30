@@ -18,7 +18,7 @@ function NewsLetter(props) {
                                 <div>
                                 
                                 <MdOutlineMail className='emailIcon' />
-                                <FormControl sx={{ width: '400px', padding:'0  15px', background: 'white', outline: 'none',color:'black' }}>
+                                <FormControl sx={{ width: '80%', padding:'0  15px', background: 'white', outline: 'none',color:'black' }}>
                                     <Input type="email" disableUnderline placeholder='enter your email..' />
 
                                 </FormControl>
@@ -30,7 +30,7 @@ function NewsLetter(props) {
                 </form>
             </div>
 
-            <div className="col-md-6">
+            <div className="col-md-6 img">
                  <img src="https://fullstack-ecommerce.netlify.app/static/media/newsletter.5931358dd220a40019fc.png"/>
             </div>
         </div>

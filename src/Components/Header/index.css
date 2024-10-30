@@ -14,47 +14,50 @@
      font-weight: 500;
  }
 
- .headerWrapperFixed{
-    background: #fff;
-    left: 0;
-    position: sticky;
-    top: 34px;
-    top: 0;
-    transition: all .3s ease-in-out;
-    width: 100%;
-    z-index: 10000;
+ .headerWrapperFixed {
+     background: #fff;
+     left: 0;
+     position: sticky;
+     top: 34px;
+     top: 0;
+     transition: all .3s ease-in-out;
+     width: 100%;
+     z-index: 100;
  }
 
- .headerWrapperFixed.fixed{
-    top:-134px;
-    box-shadow: 0 1px 3px #0000000f, 0 1px 2px #0000001f;
+ .headerWrapperFixed.fixed {
+     top: -134px;
+     box-shadow: 0 1px 3px #0000000f, 0 1px 2px #0000001f;
  }
 
- .header-wrapper{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    
-   
+ .header-wrapper {
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+
  }
 
- 
+
  .location {
      width: 180px;
      padding: 10px;
      border: 1px solid rgba(0, 0, 0, 0.1);
  }
 
+
+ 
+
  .location:hover {
      cursor: pointer;
  }
 
 
- .container{
-    margin-left: auto;
-    margin-right: auto;
+ .container {
+     margin-left: auto;
+     margin-right: auto;
  }
 
 
- 
+
 
 
  .container .row .logoWrapper:hover {
@@ -102,8 +105,8 @@
      width: 100%;
      display: flex;
      align-items: center;
-    
-    
+
+
 
  }
 
@@ -166,45 +169,45 @@
      position: relative;
  }
 
- .mobileCart{
-    position: relative;
+ .mobileCart {
+     position: relative;
  }
 
- .mobileCart Button{
-    width: 34px !important;
-    height: 34px !important;
-    border-radius: 50%;
-    background: #FFF1EE;
-    min-width: 0px;
-    border: 1px solid #ccc;
-  
-}
- 
-.mobileCart .count{
-    background: #ea2b0f;
-    border-radius: 50%;
-    color: #fff;
-    height: 16px;
-    position: absolute;
-    right: -3px;
-    top: -9px;
-    width: 16px;
-}
+ .mobileCart Button {
+     width: 32px !important;
+     height: 32px !important;
+     border-radius: 50%;
+     background: #FFF1EE;
+     min-width: 0px;
+     border: 1px solid #ccc;
+
+ }
+
+ .mobileCart .count {
+     background: #ea2b0f;
+     border-radius: 50%;
+     color: #fff;
+     height: 16px;
+     position: absolute;
+     right: -3px;
+     top: -9px;
+     width: 16px;
+ }
 
  .cart .count {
      background: #ea2b0f;
      border-radius: 50%;
      color: #fff;
-     height: 20px;
+     height: 18px;
      position: absolute;
      right: -4px;
      top: -6px;
-     width: 20px;
+     width: 18px;
  }
 
  .cart Button {
-     width: 45px !important;
-     height: 45px !important;
+     width: 40px !important;
+     height: 40px !important;
      border-radius: 50%;
      background: #FFF1EE;
      min-width: 0px;
@@ -236,33 +239,34 @@
  .open {
      background: #fff;
      border: 1px solid #0000001a;
-      height: auto!important;
+     height: auto !important;
      left: 0;
-     opacity: 1!important;
+     opacity: 1 !important;
      padding: 15px 0;
      position: absolute;
      top: 130%;
      transition: all .2s;
-     visibility: inherit!important;
+     visibility: inherit !important;
      width: 100%;
      z-index: 100;
  }
 
- .navLeft{
-    flex: 0 0 17%;
-    max-width: 17%;
+ .navLeft {
+     flex: 0 0 17%;
+     max-width: 17%;
  }
-  .navRight ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:10px;
-  }
 
-  .logoWrapper.mobileMenu{
-    display: none!important;
-  }
- 
+ .navRight ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .logoWrapper.mobileMenu {
+     display: none !important;
+ }
+
  .navSideBar {
      background: #fff;
      border: 1px solid #0000001a;
@@ -313,38 +317,44 @@
      color: blueviolet !important;
  }
 
- .mobileCart{
-    display: none;
+ .mobileCart {
+     display: none;
  }
 
-.navRight{
-    flex: 0 0 83%;
-    max-width: 83%;
-}
-
-.navRight ul li Button{
-    padding: 8px 10px;
-}
-
- .navRight ul li Button span{
-    text-transform: uppercase;
-    font-weight: 600;
-    opacity: 0.8;
+ .navRight {
+     flex: 0 0 80%;
+     max-width: 80%;
  }
 
- .navRight ul li Button:hover{
-      /* width: 100px; */
-       background-color: rgba(0, 0, 0,0.06);
-       border-radius:40px;
+ 
+
+ .navRight ul li Button {
+     padding: 8px 10px;
  }
 
- .cart .svg{
-    font-size: 23px;
-    color: black;
+ .navRight ul li Button span {
+     text-transform: uppercase;
+     font-weight: 600;
+     opacity: 0.8;
+ }
+
+ .navRight ul li Button:hover {
+     /* width: 100px; */
+     background-color: rgba(0, 0, 0, 0.06);
+     border-radius: 40px;
+ }
+
+ .cart .svg {
+     font-size: 23px;
+     color: black;
      opacity: 0.8;
      color: red;
 
  }
+
+ 
+
+ 
 
 
 
@@ -376,94 +386,128 @@
      }
 
      .part2 {
-        display: none!important;
+         display: none !important;
      }
 
      .btnWrapper {
          display: none;
      }
 
-     
-    
-      .mobileMenu{
-        display: flex!important;
-         font-size: 28px!important;
+
+
+     .mobileMenu {
+         display: flex !important;
+         font-size: 28px !important;
 
      }
-    .navLeft .navSideBar{
+
+     .navLeft .navSideBar {
          display: none;
-       
+
      }
 
-     .mobileCart{
-        display: block;
+     .mobileCart {
+         display: block;
      }
 
-     .navLeft{
-        display: none;
-     }
-
-    
-
-     .logoWrapper{
-        width: 100%!important;
-        gap:50px;
-        justify-content: center;
-     }
-
-     .logoWrapper img{
-        width: 110px!important;
-     }
-      
-     .logoWrapper .cart Button{
-        font-size: 20px!important;
-     }
-     .cart .count{
-        width: 20px!important;
-        height: 20px!important;
+     .navLeft {
+         display: none;
      }
 
 
-     .navRight{
 
-        width: 100% !important;
-        max-width: 100%!important;
-       
+     .logoWrapper {
+         width: 100% !important;
+         gap: 50px;
+         justify-content: center;
      }
 
-     .navRight .list li Button span{
+     .logoWrapper img {
+         width: 110px !important;
+     }
+
+     .logoWrapper .cart Button {
+         font-size: 20px !important;
+     }
+
+     .cart .count {
+         width: 20px !important;
+         height: 20px !important;
+     }
+
+
+     .navRight {
+
+         width: 100% !important;
+         max-width: 100% !important;
+
+     }
+
+     .navRight .list li Button span {
          /* width: 70px!important; */
          text-transform: capitalize;
      }
 
-     .navRight ul{
-        /* display: block !important; */
-        margin-bottom: 0 !important;
-        overflow: scroll !important;
-        overflow-y: hidden !important;
-        white-space: nowrap !important;
-        width: 100% !important;
-        -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;
-          margin: auto!important;
+     .navRight ul {
+         /* display: block !important; */
+         margin-bottom: 0 !important;
+         overflow: scroll !important;
+         overflow-y: hidden !important;
+         white-space: nowrap !important;
+         width: 100% !important;
+         -ms-overflow-style: none;
+         /* IE and Edge */
+         scrollbar-width: none;
+         margin: auto !important;
      }
 
-     .navRight ul li{
-        padding: 0 !important;
-        vertical-align: top !important;
-        /* width: -webkit-max-content !important; */
-        width: max-content !important;
+     .navRight ul li {
+         padding: 0 !important;
+         vertical-align: top !important;
+         /* width: -webkit-max-content !important; */
+         width: max-content !important;
 
-      }
+     }
 
-    
+
+     .mobileNavSideBar{
+        background: #fff;
+        height: 100vh!important;
+        left: 0;
+        max-height: 100vh;
+        opacity: 1;
+        overflow-y: hidden;
+        padding: 20px 0;
+        position: fixed;
+        top: 0;
+        transition: all .2s ease-in-out;
+        width: 85%;
+        z-index: 101;
+    }
+
+    .locat{
+        width: 90%;
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        margin:14px auto;
+    }
+
+    .locat select{
+        border: none;
+    }
+
 
 
  }
 
 
  @media (min-width: 1300px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 1280px;
-    }
-}
+
+     .container,
+     .container-lg,
+     .container-md,
+     .container-sm,
+     .container-xl {
+         max-width: 1280px;
+     }
+ }

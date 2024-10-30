@@ -1,6 +1,7 @@
 export const productList=[
 
       {
+          id:1,
          name:'BULLMER Black Trendy Printed Cotton Blend Crew Neck / Round Neck Half Sleeve Tshirt for Men | Non Returnable',
          price:199,
          oldPrice:230,
@@ -13,11 +14,14 @@ export const productList=[
          isFeature:'no',
          stockCount:'20',
          description:'dddd',
-         brand:'BULLMER'
+         brand:'BULLMER',
+         rating:5,
+          subCategory:'Men'
 
       },
 
       {
+         id:2,
         name:'Miss Ayse Stylish Women’s Tops for Every Occasion in Trendy Designs',
         price:199,
         oldPrice:230,
@@ -30,11 +34,13 @@ export const productList=[
         isFeature:'no',
         stockCount:'20',
         description:'dddd',
-        brand:'Miss'
+        brand:'Miss',
+        rating:4,
+         subCategory:'Women'
 
      },
 
-     {
+     {  id:3,
         name:'LRT rending Printed Half Sleeve Tshirt for Men | Non Returnable',
         price:199,
         oldPrice:230,
@@ -47,11 +53,14 @@ export const productList=[
         isFeature:'no',
         stockCount:'20',
         description:'dddd',
-        brand:'BULLMER'
+        brand:'BULLMER',
+        rating:3,
+         subCategory:'Women'
 
      },
 
-     {
+     {  
+        id:4,
         name:'EYEBOGLER Teal Tshirts/Men tshirt/ tshirt for men/ tshirt/ mens tshirt/ Men',
         price:169,
         oldPrice:270,
@@ -64,11 +73,13 @@ export const productList=[
         isFeature:'no',
         stockCount:'20',
         description:'dddd',
-        brand:'EYEBOGLER'
+        brand:'EYEBOGLER',
+        rating:4,
+         subCategory:'Men'
 
      },
 
-     {
+     {   id:5,
         name:'MISS AYSE Trendy Bottle Green Cottan Blend Round Neck Regular Top',
         price:259,
         oldPrice:350,
@@ -81,12 +92,16 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'MISS AYSE'
+        brand:'MISS AYSE',
+        rating:2,
+         subCategory:'Women'
+      
 
      },
 
 
-     {
+     {  
+        id:6,
         name:'Deepaayai fashions Women Rayon',
         price:199,
         oldPrice:230,
@@ -99,11 +114,15 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'Deepaayai fashions'
+        brand:'Deepaayai fashions',
+        rating:4,
+         subCategory:'Women'
 
      },
 
      {
+
+       id:7,
         name:'Apple MLY33HNA MacBook Air (Apple M2 Chip/8GB/256GB SSD/macOS/Liquid Retina), 34.46 cm (13.6 inch), Midnight',
         price:89999,
         oldPrice:90000,
@@ -116,10 +135,13 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'Apple'
+        brand:'Apple',
+        rating:5,
+         subCategory:'Computers and Accessories'
 
      },
      {
+      id:8,
         name:'HP 15 FD0006TU Laptop (13th Gen Intel Core i3-1315U/8GB/512GB SSD/AMD Radeon Graphics/Windows 11 Home/MSO/FHD), 39.62cm (15.6 inch)',
         price:36000,
         oldPrice:40000,
@@ -132,10 +154,13 @@ export const productList=[
         isFeature:'no',
         stockCount:'20',
         description:'dddd',
-        brand:'HP'
+        brand:'HP',
+        rating:4,
+         subCategory:'Computers and Accessories'
 
      },
      {
+      id:9,
         name:'Samsung Galaxy 27.94 cm (11.0 inch) Wi-Fi (Only) Tablet 128 GB 8 GB Gray Tab A9+ X210NE(2023)',
         price:16999,
         oldPrice:17699,
@@ -148,10 +173,13 @@ export const productList=[
         isFeature:'no',
         stockCount:'20',
         description:'dddd',
-        brand:'Samsung'
+        brand:'Samsung',
+        rating:3,
+         subCategory:'Computers and Accessories'
 
      },
      {
+      id:10,
         name:'Jio Wi-Fi Mesh Extender JCM0112, AC1200 Dual Band, Made for JioFiber, Easy installation using JioHome App',
         price:2456,
         oldPrice:4000,
@@ -164,10 +192,13 @@ export const productList=[
         isFeature:'no',
         stockCount:'20',
         description:'dddd',
-        brand:'Jio'
+        brand:'Jio',
+        rating:5,
+        subCategory:'Computers and Accessories'
 
      },
      {
+      id:11,
         name:'Herbal Max Apple Cider Vinegar Dietary Supplement 800 mg Capsule 30',
         price:500,
         oldPrice:600,
@@ -180,10 +211,13 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'Herbal max'
+        brand:'Herbal max',
+        rating:4,
+        subCategory:'Home Care'
 
      },
      {
+      id:12,
         name:'Vitawin Grape Seed Capsule 60',
         price:890,
         oldPrice:1000,
@@ -196,13 +230,16 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'Vitawin Grape Seed Capsule'
+        brand:'Vitawin Grape Seed Capsule',
+        rating:2,
+        subCategory:'Home Care'
 
      },
      {
+      id:13,
         name:'Maggi 2-Minute Masala Noodles 70 g',
-        price:14,
-        oldPrice:15,
+        price:140,
+        oldPrice:215,
         images:[
            'https://www.jiomart.com/images/product/original/490000363/maggi-2-minute-masala-noodles-70-g-product-images-o490000363-p490000363-0-202305292130.jpg?im=Resize=(420,420)',
            'https://www.jiomart.com/images/product/original/490000363/maggi-2-minute-masala-noodles-70-g-product-images-o490000363-p490000363-1-202305292130.jpg?im=Resize=(420,420)'
@@ -212,14 +249,17 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'Maggi'
+        brand:'Maggi',
+        rating:4,
+        subCategory:'Cooking Essentials'
 
      },
 
      {
+      id:14,
         name:'Maggi 2-Minute Masala Noodles 70 g',
-        price:14,
-        oldPrice:15,
+        price:200,
+        oldPrice:215,
         images:[
            'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729063186/1729063183440_navratna-ayurvedic-cool-oil-200-ml-prod-o412393-p608316522-0-202403020842.webp',
            
@@ -229,11 +269,14 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'Maggi'
+        brand:'Maggi',
+        rating:5,
+        subCategory:'Cooking Essentials'
 
      },
 
      {
+      id:15,
         name:'Surf Excel Matic Front Load Liquid Detergent 2 L',
         price:300,
         oldPrice:356,
@@ -246,12 +289,15 @@ export const productList=[
         isFeature:'no',
         stockCount:'20',
         description:'dddd',
-        brand:'Maggi'
+        brand:'Maggi',
+        rating:5,
+        subCategory:'Home Care'
 
      },
 
 
      {
+      id:16,
         name:'Tide Naturals Lemon & Chandan Detergent Powder 1 kg',
         price:300,
         oldPrice:340,
@@ -264,11 +310,14 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'Maggi'
+        brand:'Maggi',
+        rating:5,
+        subCategory:'Home Care'
 
      },
 
      {
+      id:17,
         name:'Good Life MP Wheat Chakki Atta 1 kg',
         price:14,
         oldPrice:15,
@@ -281,12 +330,15 @@ export const productList=[
         isFeature:'no',
         stockCount:'20',
         description:'dddd',
-        brand:'MaGood Life'
+        brand:'MaGood Life',
+        rating:5,
+        subCategory:'Cooking Essentials'
 
      },
 
 
      {
+      id:18,
         name:'Mars HD 2IN1 Nutration For Skin Foundation Golden Beige-F07',
         price:140,
         oldPrice:150,
@@ -299,12 +351,15 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'Wow Skin Science'
+        brand:'Wow Skin Science',
+        rating:4,
+        subCategory:'Home Care'
 
      },
 
 
      {
+      id:19,
         name:'Nisha Creme Hair Color - 3.5 Chocolate Brown 60 gm',
         price:140,
         oldPrice:158,
@@ -317,12 +372,16 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'Nisha'
+        brand:'Nisha',
+        rating:5,
+        subCategory:'Home Care'
+
 
      },
 
 
      {
+      id:20,
         name:'Good Vaseline 10mmg',
         price:14,
         oldPrice:15,
@@ -335,11 +394,14 @@ export const productList=[
         isFeature:'no',
         stockCount:'20',
         description:'dddd',
-        brand:'Vaseline'
+        brand:'Vaseline',
+        rating:3,
+        subCategory:'Home Care'
 
      },
 
      {
+      id:21,
         name:'Muuchstac Ocean Face Wash for Men, Fights Acne & Pimple, Skin Whitening & Brightening, All Skin Types, 100 Ml Each (Pack Of 2)',
         price:300,
         oldPrice:400,
@@ -351,11 +413,14 @@ export const productList=[
         isFeature:'no',
         stockCount:'20',
         description:'dddd',
-        brand:'Muuchstac'
+        brand:'Muuchstac',
+        rating:1,
+        subCategory:'Men'
 
      },
 
      {
+      id:22,
         name:'Nivea 24 hour Melt-in Moisture Caring Lip Balm, Cherry Shine 4.8 grras-demo',
         price:420,
         oldPrice:450,
@@ -368,12 +433,15 @@ export const productList=[
         isFeature:'no',
         stockCount:'20',
         description:'dddd',
-        brand:'Nivea'
+        brand:'Nivea',
+        rating:5,
+        subCategory:'Women'
 
      },
 
 
      {
+      id:23,
         name:'LIVE FASHION Black Women PU Sling Bag',
         price:350,
         oldPrice:400,
@@ -386,11 +454,15 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'Live Fashion'
+        brand:'Live Fashion',
+        rating:5,
+        subCategory:'Women'
+       
 
      },
 
      {
+      id:24,
         name:'Fytona Medium Laptop Backpack | Light weight For School Collage Office Tuition and Picnic | Waterproof Backpack (Grey, 25 L)',
         price:350,
         oldPrice:400,
@@ -403,11 +475,14 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'Fytona'
+        brand:'Fytona',
+        rating:5,
+          subCategory:'Computers and Accessories'
 
      },
 
      {
+      id:25,
         name:'FLORES Stylish Fashion Backpack For Girls and boys',
         price:390,
         oldPrice:400,
@@ -420,12 +495,15 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'Flores'
+        brand:'Flores',
+        rating:4,
+          subCategory:'Women'
 
      },
 
 
      {
+      id:26,
         name:'LIVE FASHION Black Women PU Sling Bag',
         price:300,
         oldPrice:400,
@@ -438,11 +516,14 @@ export const productList=[
         isFeature:'no',
         stockCount:'20',
         description:'dddd',
-        brand:'Live Fashion'
+        brand:'Live Fashion',
+        rating:5,
+         subCategory:'Women'
 
      },
 
      {
+      id:27,
         name:'KSC "KHATUSHYAM COLLECTION" Grey Pu For Women Handheld Bag',
         price:350,
         oldPrice:400,
@@ -455,11 +536,14 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'KSC'
+        brand:'KSC',
+        rating:5,
+         subCategory:'Women'
 
      },
 
      {
+      id:28,
         name:'ZAALIQA Girls Black Handbag',
         price:350,
         oldPrice:400,
@@ -472,11 +556,14 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'ZALQIA'
+        brand:'ZALQIA',
+        rating:5,
+        subCategory:'Women',
 
      },
 
      {
+      id:29,
         name:'Paragon PUK7014L Women Sandals | Casual Everyday Sandals | Stylish, Comfortable & Durable | For Daily & Occasion Wear',
         price:650,
         oldPrice:700,
@@ -489,10 +576,13 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'Paragaon'
+        brand:'Paragaon',
+        rating:5,
+        subCategory:'Women Footwear'
 
      },
      {
+      id:30,
         name:"Aqualite's Trendy and Stylish Orange Flip Flops & Slides For Women",
         price:350,
         oldPrice:400,
@@ -505,10 +595,13 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'Aqualite'
+        brand:'Aqualite',
+        rating:5,
+        subCategory:'Women Footwear'
 
      },
      {
+      id:31,
         name:"Paragon Women's Trendy Wedge Heel Sandals with Cushioned Sole and Sturdy Construction for Everyday Use",
         price:440,
         oldPrice:500,
@@ -521,10 +614,13 @@ export const productList=[
         isFeature:'yes',
         stockCount:'20',
         description:'dddd',
-        brand:'Paragaon'
+        brand:'Paragaon',
+        rating:5,
+        subCategory:'Women Footwear'
 
      },
      {
+      id:32,
         name:'Paragon PUK7014L Women Sandals | Casual Everyday Sandals | Stylish, Comfortable & Durable | For Daily & Occasion Wear',
         price:350,
         oldPrice:400,
@@ -537,7 +633,9 @@ export const productList=[
         isFeature:'no',
         stockCount:'20',
         description:'dddd',
-        brand:'Paragaon'
+        brand:'Paragaon',
+        rating:2,
+        subCategory:'Women Footwear'
 
      },
     

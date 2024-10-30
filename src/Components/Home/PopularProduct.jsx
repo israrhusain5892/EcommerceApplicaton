@@ -158,6 +158,7 @@ function PopularProduct(props) {
                               {
                                 data.map((product)=>{
                                   return<SwiperSlide>
+                                    
                                      <ProductItem key={product.name} product={product} />
                                  </SwiperSlide>
                                 })
