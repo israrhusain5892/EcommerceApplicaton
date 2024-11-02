@@ -46,6 +46,7 @@ export default function Dialog1({open1,onClose,product}) {
 
   console.log(product)
   const productDetail=product;
+  const[loading,setLoading]=useState(false);
   const [activeButton, setActiveButton] = useState('button2'); // Track the active button
   const [slideActive, setSlideActive] = useState(0);
   const [zoomImage, setZoomImage] = useState('https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729060584/1729060581236_fortune-sunlite-refined-sunflower-oil-1-l-product-images-o490000052-p490000052-0-202203150155.webp')
@@ -71,9 +72,32 @@ export default function Dialog1({open1,onClose,product}) {
 
   const addCart = () => {
       addToCart(productDetail)
-      toast.success("cart added successfully !!")
+      setLoading(true)
+      const isExist=cart.find(product=>product.id===productDetail.id);
+      if(isExist){
+
+          setTimeout(()=>{
+              setLoading(false)
+              toast.error("cart already added!!",{
+                 
+              })
+          },2000)
+          
+      }
+      else{
+
+          setTimeout(()=>{
+              setLoading(false)
+              toast.success("cart added successfully !!",{
+                  className:'custom-toastify'
+              })
+          },3000)
+
+      }
+     
+     
   };
-//  console.log(cart)
+
 
 
   const settings2 = {
@@ -132,7 +156,7 @@ export default function Dialog1({open1,onClose,product}) {
             {/*  */}
             <Button onClick={onClose} style={{float:'right',marginRight:0}}><IoClose className="fs-4 text-danger" /></Button>
           <DialogContentText>
-          
+           <ToastContainer position:bottom-right/>
           <div className='productDetail1'>
                 
                 <div className="row productPage align-items-start justify-content-center gap-40 mt-3 pt-3 pb-3">
@@ -207,8 +231,20 @@ export default function Dialog1({open1,onClose,product}) {
 
                         </div>
                         <div className='d-flex align-items-center mt-3 gap-4 bottom-section w-100'>
-                            <QuantityBox />
-                            <Button onClick={addCart} className='bg-danger cart-btn  text-white text-capitalize rounded-5 px-2 text-bold'> <FaCartShopping /> <span className='ml-2'>Add Cart</span></Button>
+                            <QuantityBox 
+                              
+                              quantity={productDetail?.quantity===undefined ? 1 :productDetail.quantity} 
+                              onIncrease={() => updateQuantity(productDetail?.id, productDetail?.quantity + 1)} 
+                              onDecrease={() => {
+                                  if (productDetail?.quantity > 1) {
+                                      updateQuantity(productDetail?.id, productDetail?.quantity - 1);
+                                  }
+                              }} 
+                            
+                            
+                            />
+                            <Button onClick={addCart} className='bg-danger cart-btn  text-white text-capitalize rounded-5 px-2 text-bold'> <FaCartShopping /> 
+                            <span className='ml-2'>{loading ? 'adding...':'Add Cart'}</span></Button>
                             <div className="d-flex align-items-center gap-3">
                                 <div className='d-flex align-items-center justify-content-center'
 

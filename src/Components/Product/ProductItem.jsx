@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import productImage from '../../assets/product.jpg'
 import './product.css';
 import { Link, useNavigate } from 'react-router-dom';
@@ -9,6 +9,11 @@ import { Rating } from '@mui/material';
 import Dialog1 from '../Dialog1';
 import { useState } from 'react';
 import { productList } from '../../ProductList';
+import ProductContext from '../GlobalContextProvider/ProductContext';
+import { toast } from 'react-toastify';
+import { IoMdHeart } from "react-icons/io";
+import { ToastContainer } from 'react-toastify';
+
 function ProductItem(props) {
    
     const navigate = useNavigate();
@@ -16,11 +21,45 @@ function ProductItem(props) {
     const { product } = props;
     const [open, setOpen] = useState(false);
     const[filteredProduct,setFlteredProduct]=useState(null)
+    const[wishItem,setWishItem]=useState(null);
+
+    const{wishList,setWishList,removedFromWishList,addToWishList, isExist,setIsExist,login} =useContext(ProductContext);
+  
+    const addItemToWishList=(id)=>{
+
+        const findItem=wishList.find(item=>item.id===id);
+        if(!findItem){
+           
+            const products=productList.filter(prod=>prod.id==id);
+        addToWishList(products[0]);
+        setWishItem(products[0])
+       
+              toast.success("Item added in wishList");
+        
+
+        }
+        else{
+             removedFromWishList(id)
+            
+                toast.error("Item removed from wishList");
+           
+        }
+        
+    }
 
     const openHandle = (id) => {
         const products=productList.filter(prod=>prod.id==id);
         setFlteredProduct(products[0])
         setOpen(true)
+    }
+
+
+    const goToLoginPage=()=>{
+
+        setTimeout(()=>{
+            navigate("/signin")
+        },2000)
+       
     }
 
     const goToProductPage = (id) => {
@@ -33,8 +72,11 @@ function ProductItem(props) {
 
     //  console.log(product)
     return (
+        <>
+        {/* <ToastContainer position='bottom-right'/> */}
         <div className='productItem' style={{display:props.width==='100%' &&'flex', alignItems:'center'}}>
-            <div className='imgRapper' style={{width:props.width==='100%' && '40%'}}>
+            
+            <div className='imgRapper' style={{width:props.width==='100%' && '35%'}}>
 
 
 
@@ -51,7 +93,11 @@ function ProductItem(props) {
                 <div onClick={()=>openHandle(product?.id)} className="expand">
                     <LiaExpandArrowsAltSolid className='s' />
                 </div>
-                <div className='heart'><CiHeart className='sv' /></div>
+                <div onClick={login?()=>addItemToWishList(product.id) : goToLoginPage} className={`heart ${wishList?.find(item=>item.id===product?.id)  ? 'changeBgColor':''}`}>
+                    
+                    {wishList?.find(item=>item.id===product?.id)  ? <IoMdHeart className='text-white' /> : <CiHeart className='sv'  />}
+                
+                </div>
 
 
             </div>
@@ -71,6 +117,7 @@ function ProductItem(props) {
             </div>
             <Dialog1 open1={open} product={filteredProduct} onClose={oncloseHandle} />
         </div>
+        </>
     );
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import bag from '../../assets/bag.png';
 import fashion from '../../assets/fashion.png';
 import grocery from '../../assets/grocery.png';
@@ -9,86 +9,67 @@ import beauty from '../../assets/beauty.png'
 import './home.css';
 import { Autoplay, Pagination, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Link } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
+import { FcTwoSmartphones } from "react-icons/fc";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
+import ProductContext from '../GlobalContextProvider/ProductContext';
 
 function FeatureCategorySection() {
 
-    const [category, setCategory] = useState([])
+    const {setCategory} = useContext(ProductContext);
+    const navigate=useNavigate();
+
+    const goToProduct=(category)=>{
+          setCategory(category);
+          navigate('/products');
+    }
 
     const categories = [
         {
-            name: 'Fashion',
-            image: fashion,
-            color: '#ECFFEC'
+             name: 'Fashion',
+             image: fashion,
+             color: '#ECFFEC'
         },
         {
-            name: 'Bag',
-            image: bag,
-            color: '#FDF0FF'
+             name: 'Electronics',
+             image: fashion,
+             color: '#FDF0FF'
         },
         {
-            name: 'Grocery',
-            image: grocery,
-            color: '#FFE8F8'
+             name: 'Bags',
+             image: bag,
+             color: '#FDF0FF'
         },
         {
-            name: 'Footwear',
-            image: foot,
-            color: '#DEF3FF'
+             name: 'Footwear',
+             image: foot,
+             color: '#DEF3FF'
         },
         {
-            name: 'Baeuty',
-            image: beauty,
-            color: '#DEF3FF'
+             name: 'Groceries',
+             image: grocery,
+             color: '#FFE8F8'
         },
+
+
+
         {
-            name: 'Wellness',
-            image: well,
-            color: '#FFF3FF'
-        },
-        {
-            name: 'Jwellery',
-            image: jwell,
-            color: '#FFF8E3'
+             name: 'Wellness',
+             image: well,
+             color: '#FFF3FF'
         },
 
         {
-            name: 'Jwellery',
-            image: jwell,
-            color: '#FFF8E3'
-        },
-        {
-            name: 'Jwellery',
-            image: jwell,
-            color: '#FFF8E3'
-        },
-        {
-            name: 'Jwellery',
-            image: jwell,
-            color: '#FFF8E3'
-        },
-        {
-            name: 'Jwellery',
-            image: jwell,
-            color: '#FFF8E3'
-        },
-        {
-            name: 'Bag',
-            image: bag,
-            color: '#FDF0FF'
-        },
-        {
-            name: 'Bag',
-            image: bag,
-            color: '#FDF0FF'
+             name: 'Beauty',
+             image: beauty,
+             color: '#DEF3FF'
         },
 
-    ]
+
+   ]
     return (
         <div className='container mt-5'>
             <h3 className='cat-title'>Featured Categories</h3>
@@ -97,7 +78,7 @@ function FeatureCategorySection() {
                     modules={[Autoplay, Navigation]}
                     spaceBetween={100}
                     slidesPerView={12}
-                    loop={true}
+                    loop={false}
                     // autoplay={{
                     //     delay: 2000,
                     //     disableOnInteraction: false
@@ -122,16 +103,21 @@ function FeatureCategorySection() {
                         {
 
                             categories.map(category => {
-                                return<SwiperSlide>
+                                return<SwiperSlide >
                                
-                                <div className='item-container'>
-                                  <Link >
-                                    <div className='circle'
+                                <div  className='item-container'>
+                                   
+                                    <div  onClick={()=>goToProduct(category.name)} className='circle'
+                                     
                                         style={{ background: `${category.color}` }}
                                     >
-                                        <img src={category.image} alt={category.name} />
+                                        {category.name==='Electronics' ? <FcTwoSmartphones className='fs-1'/> :
+                                         <img src={category.image} alt={category.name} />
+                                        
+                                        }
+                                       
                                     </div>
-                                    </Link>
+                                   
                                     <h6>{category.name}</h6>
                                 </div>
                              

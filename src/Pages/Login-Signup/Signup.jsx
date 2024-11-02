@@ -109,7 +109,7 @@ const Signup = () => {
                 });
                 if (response.ok) {
                     setLoading(false);
-                    Swal.fire('Registration Successful', 'Registered successfully.', 'success').then(() => navigate("/login"));
+                    Swal.fire('Registration Successful', 'Registered successfully.', 'success').then(() => navigate("/signin"));
                 } else {
                     setLoading(false);
                     Swal.fire('Error', 'Registration failed.', 'error');
@@ -218,8 +218,8 @@ const Signup = () => {
                                     className="px-3 bg-primary py-2 text-white gap-2 d-flex align-items-center btn-block text-capitalize"
                                     disabled={loading}
                                 >
-                                    {loading && <CircularProgress size="20px" style={{ color: "white" }} />}
-                                    Sign Up
+                                    {loading ? <CircularProgress size="20px" style={{ color: "white" }} /> :' Sign Up'}
+                                   
                                 </Button>
                               <Button onClick={goToHome} style={{border:'1px solid rgba(25, 118, 210, 0.5)',width:'50%'}} className="text-blue text-capitalize px-5 py-2 btn-block">Cancel</Button>
                             </div>

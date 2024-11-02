@@ -84,7 +84,7 @@ const ProductList = () => {
     }
 
  
-    else if (category) {
+    if (category) {
      
          results = productList.filter(product =>
             product.category.toLowerCase() === category.toLowerCase() || product.subCategory.toLowerCase().includes(category.toLowerCase())
@@ -196,9 +196,9 @@ const ProductList = () => {
                     <div className="rightContainer ">
                         <div className='topPart mt-0 mb-3 d-flex align-items-center justify-content-between'>
                             <div className='d-flex gap-4 align-items-center '>
-                                <IoIosMenu onClick={() => setWidth('100%')} className='full ' />
-                                <TiThSmall onClick={() => setWidth('33%')} className='some ' />
-                                <BiBorderAll onClick={() => setWidth('25%')} className='all ' />
+                                <IoIosMenu onClick={() => setWidth('100%')} className={`full ${width==='100%' ? 'activeViewButton':''}`} />
+                                <TiThSmall onClick={() => setWidth('33%')} className={`some ${width==='33%' ? 'activeViewButton':''}`} />
+                                <BiBorderAll onClick={() => setWidth('25%')} className={`all ${width==='25%' ? 'activeViewButton':''}`} />
                             </div>
                             <div>
                                 <span className='mr-4'>Show  </span>

@@ -15,7 +15,7 @@ import { FaCartShopping } from "react-icons/fa6";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { MdOutlineCompareArrows } from "react-icons/md";
 import Layout from '../../Components/Layout/index.jsx';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { productList } from '../../ProductList.js';
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -26,9 +26,9 @@ const ProductDetail = () => {
 
     const{id}=useParams();
 
-    const{cart,setCart,addToCart,updateQuantity,removeFromCart}=useContext(ProductContext);
+    const{cart,setCart,addToCart,updateQuantity,removeFromCart,login}=useContext(ProductContext);
    
-
+     const[loading,setLoading]=useState(false)
     console.log(id)
     const[productDetail,setProductDetail]=useState(null);
     const [activeButton, setActiveButton] = useState('button2'); // Track the active button
@@ -37,6 +37,8 @@ const ProductDetail = () => {
     const [bg, setBg] = useState('Description');
     const slideRef = useRef();
     // console.log(productList)
+
+    const navigate=useNavigate();
 
     useEffect(()=>{
         const filteredProduct= productList.filter(product=>product.id==id);
@@ -56,14 +58,42 @@ const ProductDetail = () => {
 
     const addCart = () => {
         addToCart(productDetail)
-        setTimeout(()=>{
-            toast.success("cart added successfully !!")
-        },3000)
+        setLoading(true)
+        const isExist=cart.find(product=>product.id===productDetail.id);
+        if(isExist){
+
+            setTimeout(()=>{
+                setLoading(false)
+                toast.error("cart already added!!",{
+                    position: toast.POSITION.TOP_CENTER,
+                    zIndex:'200000'
+                })
+            },2000)
+            
+        }
+        else{
+
+            setTimeout(()=>{
+                setLoading(false)
+                toast.success("cart added successfully !!",{
+                    className:'custom-toastify'
+                })
+            },3000)
+
+        }
+       
        
     };
    console.log(cart)
 
-
+    const goToLogin=()=>{
+        toast.error("you are not login first login !!")
+        setTimeout(()=>{
+            
+            navigate("/signin");
+        },2000)
+       
+    }
     const settings2 = {
         dots: false, // Show dots below the slider
         infinite: false, // Allows infinite loop
@@ -148,13 +178,7 @@ const ProductDetail = () => {
                                 <img className='w-100' src={productDetail?.images[1]}/>
                             </div>
 
-                          
-                           
-
-
-                            
-
-                        </Slider>
+                         </Slider>
 
                     </div>
                     <div className="col-md-6">
@@ -204,7 +228,7 @@ const ProductDetail = () => {
                         <div className='d-flex flex-wrap-reverse align-items-center mt-5 gap-4 bottom-section'>
                             <QuantityBox  
                               
-                              quantity={productDetail?.quantity===undefined ?1 :productDetail.quantity} 
+                              quantity={productDetail?.quantity===undefined ? 1 :productDetail.quantity} 
                               onIncrease={() => updateQuantity(productDetail?.id, productDetail?.quantity + 1)} 
                               onDecrease={() => {
                                   if (productDetail?.quantity > 1) {
@@ -213,7 +237,9 @@ const ProductDetail = () => {
                               }} 
                             
                             />
-                            <Button onClick={addCart} className='bg-danger cart-btn text-white text-capitalize rounded-5 px-4 text-bold'> <FaCartShopping /> <span className='ml-2'>Add To Cart</span></Button>
+                            <Button onClick={ login ? addCart : goToLogin} className='bg-danger cart-btn text-white text-capitalize rounded-5 px-4 text-bold'> <FaCartShopping /> <span className='ml-2'>
+                              {loading ? 'adding...' : 'Add To Cart'}</span>
+                            </Button>
                             <div className="d-flex align-items-center gap-3">
                                 <div className='d-flex align-items-center justify-content-center'
 

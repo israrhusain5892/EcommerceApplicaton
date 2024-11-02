@@ -12,8 +12,12 @@ const QuantityBox=({quantity,onIncrease,onDecrease})=>{
 
   useEffect(() => {
     setLocalQuantity(quantity); 
-    setProductQuantity(quantity)// Sync with prop value if it changes  
+   
 }, [quantity]);
+
+useEffect(()=>{
+    setProductQuantity(localQuantity);
+},[localQuantity])
 
 const handleIncrease = () => {
     setLocalQuantity(prevQuantity => prevQuantity + 1);

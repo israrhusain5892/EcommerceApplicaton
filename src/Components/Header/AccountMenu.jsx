@@ -35,7 +35,11 @@ export default function AccountMenu({Logout}) {
         setUserDetail(getCurrentUserDetail())
      },[getCurrentUserDetail])
 
-   
+     const navigate=useNavigate();
+
+    const goToWishList=()=>{
+          navigate("/wishlist");
+    }
      
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
@@ -116,7 +120,7 @@ export default function AccountMenu({Logout}) {
                 <MenuItem className='text-bold ' style={{fontSize:'14px',fontWeight:'500'}}onClick={handleClose}>
                      <MdOutlinePayment className='mr-4' style={{marginRight:'17px'}} /> Orders
                 </MenuItem>
-                <MenuItem className='text-bold ' style={{fontSize:'14px',fontWeight:'500'}}onClick={handleClose}>
+                <MenuItem  className='text-bold ' style={{fontSize:'14px',fontWeight:'500'}} onClick={goToWishList}>
                      <FaHeart className='mr-4' style={{marginRight:'14px'}} /> MyList
                 </MenuItem>
 

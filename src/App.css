@@ -141,11 +141,27 @@
 .productItem2{
    width:25%;
 }
+
+
+.custom-toastify {
+   background-color: #4CAF50 !important; /* Change this color to your preference */
+   /* color: white !important; */
+ }
+
+/* .custom-toastify{
+   background-color: #00b853;
+} */
 .rightContainer .topPart .all{
    font-size: 25px;
    opacity: 0.5;
    cursor: pointer;
    transition: 0.3s;
+}
+
+.rightContainer .activeViewButton{
+   opacity: 1!important;
+   cursor: pointer;
+   background:rgba(0,0,0,0.05)
 }
 .all:hover{
    opacity: 1!important;
@@ -449,6 +465,24 @@
    background: #7a55c1!important;
 }
 
+
+/* wishlist css */
+
+.wishListPage{
+   width: 65% !important;
+}
+
+.wishListPage .table tr a{
+   text-decoration: none!important;
+}
+.wishListPage .table tr a h6:hover{
+   color: brown!important;
+}
+
+.wishListPage .table thead{
+   background: #ccc;
+   border-radius: 5px;
+}
 
 
 

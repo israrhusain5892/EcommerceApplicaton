@@ -48,6 +48,12 @@
 
 }
 
+.changeBgColor{
+    background: #DC3545!important;
+}
+
+
+
 .productImageWrapper{
     height: 100%;
     left: 0;

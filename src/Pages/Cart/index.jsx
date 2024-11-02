@@ -14,7 +14,7 @@ import { toast } from "react-toastify";
 import emptycart from '../../assets/emptycart.png';
 const Cart = () => {
      
-    const{cart,setCart,updateQuantity,removeFromCart}=useContext(ProductContext);
+    const{cart,setCart,updateQuantity,removeFromCart,login}=useContext(ProductContext);
     const[subTotal,setSubTotal]=useState(0);
     const[total,setTotal]=useState(0);
     console.log(cart);

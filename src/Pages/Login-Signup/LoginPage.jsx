@@ -91,8 +91,10 @@ const LoginPage = () => {
                     // });
                     toast.success("Login successfully !!");
                     doLogin(response.data, () => {
-
+                       setTimeout(()=>{
                         navigate("/");
+                       },2000)
+                        
 
                     });
                 }
@@ -201,8 +203,8 @@ const LoginPage = () => {
                                     disabled={loading}
 
                                 >
-                                    {loading && <CircularProgress size="20px" style={{ color: "white" }} />}
-                                    Sign In
+                                    {loading ? <CircularProgress size="20px" style={{ color: "white" }}/> :'Sign In' }
+                                    
                                 </Button>
                                 <Button onClick={goToHome} style={{ border: '1px solid rgba(25, 118, 210, 0.5)', width: '50%' }} className="text-blue text-capitalize px-5 py-2 btn-block">Cancel</Button>
                             </div>

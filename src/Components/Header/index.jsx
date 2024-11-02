@@ -159,6 +159,10 @@ const Header = () => {
          
      }
 
+     const goToHome=()=>{
+          navigate('/');
+     }
+
      return (
           <>
                <div className="headerWrapperFixed fixed">
@@ -175,7 +179,7 @@ const Header = () => {
                                    <div className="row">
                                         <div className="logoWrapper d-flex col-sm-2 align-items-center">
                                              <Button onClick={toggleDrawer(true)} className="mobileMenu"><IoMdMenu /></Button>
-                                             <Link to='/'><img src={logo} alt="logo" /></Link>
+                                             <Button onClick={goToHome}><img src={logo} alt="logo" /></Button>
                                              <div onClick={goToCartPage} className="mobileCart">
                                                   <Button> <BsMinecartLoaded style={{ fontSize: '23px', color: 'red', opacity: '0.8' }} /></Button>
                                                   <span className="count d-flex align-items-center justify-content-center">{cart.length}</span>
