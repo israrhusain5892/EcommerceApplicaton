@@ -20,7 +20,7 @@ function WishListPage(props) {
     return (
         <Layout>
         <div className="container wishListPage mt-4 ">
-            <h2 className="hd mb-1" style={{ fontSize: '18px', fontWeight: '600', textTransform: 'upperCase' }}>My List</h2>
+            <h2 className="hd mb-1" style= {{ fontSize: '18px', fontWeight: '600', textTransform: 'upperCase' }}>My List</h2>
             <p className="fs-6 mb-0">There are <b className="text-danger">{wishList?.length}</b> products in your wishlist </p>
            {
             wishList?.length>0 ? <div className="mt-3 w-100">
@@ -48,7 +48,7 @@ function WishListPage(props) {
                                     <Link to={'/'}>
                                           <div className="productContainer d-flex align-items-center gap-3">
                                                <div className="" style={{width:100, height:100, }}>
-                                                   <img src={prod?.images[0]} className='w-100 h-100 object-cover'/>
+                                                   <img src={prod?.images[0]} className='w-100 h-100 object-cover' alt="img"/>
                                                </div>
                                                <div className="w-100">
                                                  <h6 className="title" style={{ color:' #343434',fontWeight:'700' ,}}>{prod?.name.slice(0,25)}..</h6>
@@ -70,7 +70,7 @@ function WishListPage(props) {
                                 
                                 /></td>
                                 <td width='15%'>Rs {prod?.quantity*prod?.price}</td> */}
-                                <td width='25%'><MdDelete onClick={()=>removewishList(prod?.id)} className="fs-4 text-danger cursor del" /></td>
+                                <td width='25%'><MdDelete onClick={()=>removedFromwishList(prod?.id)} className="fs-4 text-danger cursor del" /></td>
                                 </tr>
 
                                 })
@@ -85,11 +85,14 @@ function WishListPage(props) {
             </div>
             
         </div>:
-           <div className="d-flex empty">
-              <img className="emptyImage" src={emptywishList}/>
-              <p className="text-center mt-4 fs-3">Your wishList is Currently Empty</p>
+           <div className=" empty">
+              {/* <img className="emptyImage" src={emptywishList}/> */}
+              <p className="text-center w-100 mt-4 fs-3">Your wishList is Currently Empty</p>
               <Link to={'/'}>
-                 <Button className="px-4 py-2 text-white rounded-5 bg-danger text-capitalize font-weight-bold">Continue Shopping</Button>
+                <div className='mx-auto w-100 text-center'>
+                <Button className="px-4  mx-auto   py-2 text-white rounded-5 bg-danger text-capitalize font-weight-bold">Continue Shopping</Button>
+                </div>
+                 
               </Link>
               
            </div>
