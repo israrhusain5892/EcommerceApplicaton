@@ -1,6 +1,6 @@
 import Layout from "../../Components/Layout";
 import '../../App.css';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Rating } from "@mui/material";
 import { MdDelete } from "react-icons/md";
 import QuantityBox from "../../Components/QuantityBox.jsx";
@@ -13,7 +13,7 @@ import { ToastContainer } from "react-toastify";
 import { toast } from "react-toastify";
 import emptycart from '../../assets/emptycart.png';
 const Cart = () => {
-     
+     const navigate=useNavigate();
     const{cart,setCart,updateQuantity,removeFromCart,login}=useContext(ProductContext);
     const[subTotal,setSubTotal]=useState(0);
     const[total,setTotal]=useState(0);
@@ -22,6 +22,10 @@ const Cart = () => {
      const removeCart=(id)=>{
         removeFromCart(id);
         toast.success("Item removed successfully !!")
+     }
+
+     const goToOrder=()=>{
+         navigate("/order",{state:{total:totalPrice}})
      }
     return (
         <>
@@ -115,7 +119,7 @@ const Cart = () => {
                                     <span className="ml-auto text-danger font-weight-bold"><b>₹ {totalPrice.toFixed(2)}</b></span>
                                </div>
                                <div>
-                                   <Button className="px-4 d-flex checkout-btn fs-6 font-weight-bold align-items-center justify-content-center gap-2 text-capitalize py-2 border bg-danger text-white rounded-3">
+                                   <Button onClick={goToOrder} className="px-4 d-flex checkout-btn fs-6 font-weight-bold align-items-center justify-content-center gap-2 text-capitalize py-2 border bg-danger text-white rounded-3">
                                    <IoBagCheckOutline className="fs-4 font-weight-bold" />
                                      checkout
                                    </Button>

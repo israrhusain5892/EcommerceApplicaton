@@ -19,6 +19,7 @@ import { isLogin } from './Pages/Login-Signup/Auth.js';
 import { useEffect } from 'react';
 import ProductContext from './Components/GlobalContextProvider/ProductContext';
 import WishListPage from './Pages/WishList/WishListPage.jsx';
+import OrderDetail from './Pages/OrderDetail';
 function App() {
 
 //   const { login,setLogin,userDetail, setUserDetail} = useContext(ProductContext);
@@ -42,6 +43,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/signin" element={<LoginPage />} />
             <Route path="/wishlist" element={<WishListPage />} />
+            <Route path="/order" element={<OrderDetail />} />
           </Routes>
         </Router>
         </ProductProvider>
