@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { TextField, Button, Box, Container, Typography, Grid, Card, CardContent, Divider } from '@mui/material';
 import { IoBagCheckOutline } from "react-icons/io5";
 import Layout from '../Components/Layout';
 import useRazorpay from "react-razorpay";
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
+import ProductContext from '../Components/GlobalContextProvider/ProductContext';
 const OrderDetail = () => {
 
     const [Razorpay] = useRazorpay();
+
     const location = useLocation();
     const { state } = location;
+   const{cart}= useContext(ProductContext);
+   const totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0);
     // const [Razorpay]=useRazorpay;
     // State for form values and validation errors
     const [formValues, setFormValues] = useState({
@@ -26,14 +30,8 @@ const OrderDetail = () => {
     const [errors, setErrors] = useState({});
 
     // Sample product details for the order summary
-    const productDetails = {
-        name: "Product A",
-        price: state?.total,
-        quantity: 2,
-    };
 
-    const subtotal = productDetails.price * productDetails.quantity;
-    const total = subtotal + 5; // Assuming $5 for shipping or additional fees
+   // Assuming $5 for shipping or additional fees
 
     // Handle form value changes
     const handleChange = (e) => {
@@ -68,7 +66,7 @@ const OrderDetail = () => {
         if (validate()) {
             console.log('Billing Details:', formValues);
             try {
-                const amt = productDetails.price;
+                const amt = totalPrice;
                 const result = await axios.post(`https://tourism-and-travel-management-system.onrender.com/public/create-order/${amt}`);
                 const { amount, id: order_id, currency } = result.data;
     
@@ -114,7 +112,7 @@ const OrderDetail = () => {
                     <form onSubmit={handleSubmit}>
                         <Grid container spacing={3}>
                             {/* Left Side - Billing Details Form */}
-                            <Grid item xs={12} md={7}>
+                            <Grid item xs={12} md={8}>
 
                                 <Typography variant="h6" gutterBottom>
                                     Billing Details
@@ -395,34 +393,42 @@ const OrderDetail = () => {
                             </Grid>
 
                             {/* Right Side - Order Summary */}
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={12} md={4}>
                                 <Card variant="outlined">
                                     <CardContent>
-                                        <Typography variant="h6" gutterBottom>
+                                        <Typography style={{fontSize:18}} variant="h6" gutterBottom>
                                             Order Summary
                                         </Typography>
+                                        <hr/>
 
-                                        {/* Product Details */}
                                         <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
-                                            <Typography variant="body1">{productDetails.name} (x{productDetails.quantity})</Typography>
-                                            <Typography variant="body1">Rs{productDetails?.price}</Typography>
-                                        </Box>
-
-                                        {/* Subtotal */}
-                                        <Divider sx={{ my: 1 }} />
-                                        <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
+                                            <Typography variant="body1">Product</Typography>
                                             <Typography variant="body1">Subtotal</Typography>
-                                            <Typography variant="body1">${subtotal.toFixed(2)}</Typography>
                                         </Box>
+                                       
+                                        <hr/>
+                                        {/* Product Details */}
 
-                                        {/* Total */}
-                                        <Divider sx={{ my: 1 }} />
+                                        {
+                                            cart?.map((item,index)=>{
+                                               return <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
+                                                <Typography variant="body1">{item?.name.slice(0,20)}... (x{item?.quantity})</Typography>
+                                                <Typography variant="body1">Rs {item?.price*item?.quantity}</Typography>
+                                            </Box>
+                                            })
+                                        }
+                                       
+                                       
+
+                                        
+                                        <hr/>
+                                        {/* <Divider sx={{ my: 1 }} /> */}
                                         <Box display="flex" justifyContent="space-between" alignItems="center" mt={2}>
-                                            <Typography variant="h6">Total</Typography>
-                                            <Typography variant="h6">${total.toFixed(2)}</Typography>
+                                            <Typography variant="h6"  style={{fontSize:18}}>Total</Typography>
+                                            <Typography variant="h6"  style={{fontSize:18}}>Rs {totalPrice}</Typography>
                                         </Box>
                                     </CardContent>
-                                    <div className='mt-4 mb-3 px-3'>
+                                    <div className='mt-3 mb-3 px-3'>
                                         <Button type="submit" className="px-4 d-flex w-100 fs-6 font-weight-bold align-items-center justify-content-center gap-2 text-capitalize py-1 border bg-danger text-white ">
                                             <IoBagCheckOutline className="fs-5 font-weight-bold" />
                                             checkout

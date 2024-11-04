@@ -25,7 +25,7 @@ const Cart = () => {
      }
 
      const goToOrder=()=>{
-         navigate("/order",{state:{total:totalPrice}})
+         navigate("/order")
      }
     return (
         <>
