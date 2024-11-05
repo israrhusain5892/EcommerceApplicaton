@@ -159,7 +159,7 @@ const LoginPage = () => {
 
                     <div className="col-lg-4 mt-5  bg-white shadow rounded-3  signup">
                         <img style={{ width: '120px', marginLeft: '30%' }} src={logo} />
-                        <h5 className="text-left ">Sign Up</h5>
+                        <h5 className="text-left ">Sign In</h5>
                         <form onSubmit={handleLogin} className="px-3 py-2">
 
 
