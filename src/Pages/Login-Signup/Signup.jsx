@@ -125,7 +125,7 @@ const Signup = () => {
     };
 
     return (
-        <div style={{ backgroundImage: 'linear-gradient(to top, #30cfd0 0%, #330867 100%)', height: '100%' }}>
+        <div style={{ backgroundImage: 'linear-gradient(to top, #30cfd0 0%, #330867 100%)', height: '100vh' }}>
             <section className="container">
                 <div className="row justify-content-center ">
                     
