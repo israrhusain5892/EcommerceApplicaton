@@ -77,7 +77,7 @@ const OrderDetail = () => {
                     key_secret: "pvELoNMJuG107DKyjLapBhI7",
                     amount: amount,
                     currency: currency,
-                    name: "Indian Tourism",
+                    name: "Shopify",
                     description: 'Booking Payment',
                     // image:'https://img.freepik.com/free-photo/traveler-accessories-cup-tea-pink-background_23-2147950767.jpg?t=st=1721291423~exp=1721295023~hmac=c3b551172e792245e2494b3a66f214635f630df0ebc46e7862b4f388dee24b2d&w=740',
                     order_id: order_id,
