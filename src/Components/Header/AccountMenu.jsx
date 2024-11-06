@@ -40,6 +40,10 @@ export default function AccountMenu({Logout}) {
     const goToWishList=()=>{
           navigate("/wishlist");
     }
+
+    const goToOrderPage=()=>{
+        navigate("/myorder");
+    }
      
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
@@ -117,7 +121,7 @@ export default function AccountMenu({Logout}) {
                      <FaUser className='mr-4' style={{marginRight:'14px'}} /> My Account
                 </MenuItem>
               
-                <MenuItem className='text-bold ' style={{fontSize:'14px',fontWeight:'500'}}onClick={handleClose}>
+                <MenuItem className='text-bold ' style={{fontSize:'14px',fontWeight:'500'}}onClick={goToOrderPage}>
                      <MdOutlinePayment className='mr-4' style={{marginRight:'17px'}} /> Orders
                 </MenuItem>
                 <MenuItem  className='text-bold ' style={{fontSize:'14px',fontWeight:'500'}} onClick={goToWishList}>

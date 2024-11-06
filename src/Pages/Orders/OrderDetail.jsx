@@ -1,15 +1,16 @@
 import React, { useContext, useState } from 'react';
 import { TextField, Button, Box, Container, Typography, Grid, Card, CardContent, Divider } from '@mui/material';
 import { IoBagCheckOutline } from "react-icons/io5";
-import Layout from '../Components/Layout';
+import Layout from '../../Components/Layout';
 import useRazorpay from "react-razorpay";
+import apiUrl from '../../Axios';
 import axios from 'axios';
-import { useLocation } from 'react-router-dom';
-import ProductContext from '../Components/GlobalContextProvider/ProductContext';
+import { useLocation, useNavigate } from 'react-router-dom';
+import ProductContext from '../../Components/GlobalContextProvider/ProductContext';
 const OrderDetail = () => {
 
     const [Razorpay] = useRazorpay();
-
+     const navigate=useNavigate();
     const location = useLocation();
     const { state } = location;
    const{cart}= useContext(ProductContext);
@@ -67,7 +68,7 @@ const OrderDetail = () => {
             console.log('Billing Details:', formValues);
             try {
                 const amt = totalPrice;
-                const result = await axios.post(`https://tourism-and-travel-management-system.onrender.com/public/create-order/${amt}`);
+                const result = await axios.post(`${apiUrl}/public/create-order/${amt}`);
                 const { amount, id: order_id, currency } = result.data;
     
                 console.log(result);
@@ -83,9 +84,11 @@ const OrderDetail = () => {
                     order_id: order_id,
                     handler: async function (response) {
                         // Handle payment success
-                        setLoading(true);
+                        
                         console.log(response);
-                        // await UpdatePayment(result.data);
+                       
+                    //    navigate("/myorder");
+                       window.location.href="/myorder"
                     },
                     theme: {
                         color: '#F37254'
@@ -99,8 +102,12 @@ const OrderDetail = () => {
                 console.log(error);
             }
             // alert('Order Submitted Successfully!');
+           
         }
+
     };
+
+    
 
     return (
         <Layout>

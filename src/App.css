@@ -520,6 +520,8 @@
    display: block;
    overflow-x: auto;
    width: 100%;
+   white-space: nowrap;
+   scrollbar-width: none;
 }
 
 @media(max-width:768px) {
