@@ -38,7 +38,7 @@ function PopularProduct(props) {
       { name: 'Footwear', image: foot, color: '#DEF3FF' },
       { name: 'Beauty', image: beauty, color: '#DEF3FF' },
       { name: 'Wellness', image: well, color: '#FFF3FF' },
-      { name: 'Jwellery', image: jwell, color: '#FFF8E3' },
+      
   ];
 
   const handleLinkClick = (link) => {

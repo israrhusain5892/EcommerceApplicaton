@@ -17,14 +17,11 @@ function HomeSlider() {
     return (
         <div className='homeSlider px-24 mt-3'>
             <Swiper
-                modules={[Pagination, Autoplay, Navigation]}
+                modules={[Pagination,  Navigation]}
                 spaceBetween={50}
                 slidesPerView={1}
                 loop={true}
-                autoplay={{
-                    delay: 2000,
-                    disableOnInteraction: false
-                }}
+                
                 pagination={{ clickable: true }}
                 navigation
                 className='swiper'

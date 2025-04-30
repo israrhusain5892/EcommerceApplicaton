@@ -13,7 +13,7 @@ function BannerSection2(props) {
            <Swiper
                 modules={[Pagination,  Navigation]}
                 spaceBetween={10}
-                slidesPerView={3}
+                slidesPerView={4}
                 loop={false}
 
                 breakpoints={{
@@ -36,20 +36,29 @@ function BannerSection2(props) {
             >
                 <SwiperSlide className="swiperBox">
                     <Link className="box">
-                       <img src='https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729520206/1729520205930_banner-7.jpg' alt="imga" />
+                       <img src='https://cdn-basic-content-api.picsart.io/p/d727e561-0814-49b8-b400-ac8b0dcdcc97.png' alt="imga" />
                     </Link>
                    
                 </SwiperSlide>
                 <SwiperSlide className="swiperBox">
                     <Link className="box">
-                    <img src='https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729058341/1729058338771_banner-9.jpg' alt="imgb" />
+                    <img src='https://cdn-basic-content-api.picsart.io/p/d2e7fabe-3a34-4373-8b41-00a48f2b5302.png' alt="imgb" />
                     </Link>
                    
                 </SwiperSlide>
                 <SwiperSlide className="swiperBox">
                     <Link className="box">
-                    <img src='https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729058356/1729058354752_banner-5.jpg' alt="imgc" />
+                    <img src='https://cdn-template.picsart.com/templates-cdn/28b382e4-1575-4c77-95c6-6cb0ca395e70.png' alt="imgc" />
                     </Link>
+                   
+                    
+                </SwiperSlide>
+
+                <SwiperSlide className="swiperBox">
+                    <Link className="box">
+                    <img src=' https://cdn-basic-content-api.picsart.io/p/1bf92ee7-9ea5-4115-9572-610c6bf4d18c.png' alt="imgc" />
+                    </Link>
+                   
                     
                 </SwiperSlide>
                   

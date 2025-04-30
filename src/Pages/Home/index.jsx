@@ -24,7 +24,7 @@ function Home() {
          <FeatureCategorySection/>
           <PopularProduct/>
           <NewProduct/>
-          <BannerSection/>
+          {/* <BannerSection/> */}
           <FeatureProduct/>
           <BannerSection2/>
           <BeautyProduct/>

@@ -235,54 +235,18 @@ export const productList=[
         subCategory:'Home Care'
 
      },
+    
+
+    
+
      {
       id:13,
-        name:'Maggi 2-Minute Masala Noodles 70 g',
-        price:140,
-        oldPrice:215,
-        images:[
-           'https://www.jiomart.com/images/product/original/490000363/maggi-2-minute-masala-noodles-70-g-product-images-o490000363-p490000363-0-202305292130.jpg?im=Resize=(420,420)',
-           'https://www.jiomart.com/images/product/original/490000363/maggi-2-minute-masala-noodles-70-g-product-images-o490000363-p490000363-1-202305292130.jpg?im=Resize=(420,420)'
-
-        ],
-        category:'Groceries',
-        isFeature:'yes',
-        stockCount:'20',
-        description:'dddd',
-        brand:'Maggi',
-        rating:4,
-        subCategory:'Cooking Essentials'
-
-     },
-
-     {
-      id:14,
-        name:'Maggi 2-Minute Masala Noodles 70 g',
-        price:200,
-        oldPrice:215,
-        images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729063186/1729063183440_navratna-ayurvedic-cool-oil-200-ml-prod-o412393-p608316522-0-202403020842.webp',
-           
-
-        ],
-        category:'Groceries',
-        isFeature:'yes',
-        stockCount:'20',
-        description:'dddd',
-        brand:'Maggi',
-        rating:5,
-        subCategory:'Cooking Essentials'
-
-     },
-
-     {
-      id:15,
         name:'Surf Excel Matic Front Load Liquid Detergent 2 L',
         price:300,
         oldPrice:356,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729063371/1729063364638_wipro-safewash-matic-front-load-liquid-detergent-2-l-product-images-o491631729-p491631729-0-202210071628_1.webp',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729063384/1729063364643_wipro-safewash-matic-front-load-liquid-detergent-2-l-product-images-o491631729-p491631729-1-202210071628.jpg'
+           'https://www.jiomart.com/images/product/original/492367966/surf-excel-easy-wash-detergent-powder-5-kg-product-images-o492367966-p590837659-0-202501271942.jpg?im=Resize=(360,360)',
+           'https://www.jiomart.com/images/product/original/492367966/surf-excel-easy-wash-detergent-powder-5-kg-product-images-o492367966-p590837659-0-202501271942.jpg?im=Resize=(360,360)'
 
         ],
         category:'Groceries',
@@ -294,6 +258,47 @@ export const productList=[
         subCategory:'Home Care'
 
      },
+
+     {
+      id:14,
+        name:'Fanta Oranage',
+        price:300,
+        oldPrice:356,
+        images:[
+           'https://www.jiomart.com/images/product/original/491085933/fanta-orange-750-ml-product-images-o491085933-p491085933-0-202412121933.jpg?im=Resize=(360,360)',
+           'https://www.jiomart.com/images/product/original/491085933/fanta-orange-750-ml-product-images-o491085933-p491085933-0-202412121933.jpg?im=Resize=(360,360)'
+
+        ],
+        category:'Groceries',
+        isFeature:'no',
+        stockCount:'20',
+        description:'dddd',
+        brand:'Maggi',
+        rating:5,
+        subCategory:'Home Care'
+
+     },
+
+     {
+      id:15,
+        name:'Maza Mano Drink',
+        price:300,
+        oldPrice:356,
+        images:[
+           'https://www.jiomart.com/images/product/original/490001795/maaza-mango-drink-1-2-l-product-images-o490001795-p490001795-0-202301272130.jpg?im=Resize=(360,360)',
+           'https://www.jiomart.com/images/product/original/490001795/maaza-mango-drink-1-2-l-product-images-o490001795-p490001795-0-202301272130.jpg?im=Resize=(360,360)'
+
+        ],
+        category:'Groceries',
+        isFeature:'no',
+        stockCount:'20',
+        description:'dddd',
+        brand:'Maggi',
+        rating:5,
+        subCategory:'Home Care'
+
+     },
+
 
 
      {
@@ -302,8 +307,8 @@ export const productList=[
         price:300,
         oldPrice:340,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729063411/1729063409228_tide-naturals-lemon-chandan-detergent-powder-1-kg-product-images-o490916874-p490916874-0-202205301924.webp',
-           'https://www.jiomart.com/images/product/original/490000363/maggi-2-minute-masala-noodles-70-g-product-images-o490000363-p490000363-1-202305292130.jpg?im=Resize=(420,420)'
+           'https://www.jiomart.com/images/product/original/490916874/tide-naturals-lemon-chandan-detergent-powder-1-kg-product-images-o490916874-p490916874-0-202205301924.jpg?im=Resize=(420,420)',
+           'https://www.jiomart.com/images/product/original/490916874/tide-naturals-lemon-chandan-detergent-powder-1-kg-product-images-o490916874-p490916874-0-202205301924.jpg?im=Resize=(420,420)'
 
         ],
         category:'Groceries',
@@ -316,35 +321,17 @@ export const productList=[
 
      },
 
+     
+
+
      {
       id:17,
-        name:'Good Life MP Wheat Chakki Atta 1 kg',
-        price:14,
-        oldPrice:15,
-        images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729059709/1729059705934_good-life-mp-wheat-chakki-atta-1-kg-product-images-o491458271-p491458271-0-202306011947.webp',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729059711/1729059705935_good-life-mp-wheat-chakki-atta-1-kg-product-images-o491458271-p491458271-1-202306011947.webp'
-
-        ],
-        category:'Groceries',
-        isFeature:'no',
-        stockCount:'20',
-        description:'dddd',
-        brand:'MaGood Life',
-        rating:5,
-        subCategory:'Cooking Essentials'
-
-     },
-
-
-     {
-      id:18,
         name:'Mars HD 2IN1 Nutration For Skin Foundation Golden Beige-F07',
         price:140,
         oldPrice:150,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729063888/1729063887237_mars-hd-2in1-nutration-for-skin-foundation-golden-beige-f07-product-images-orvjaeibjcv-p603656924-0-202308051112.webp',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729063890/1729063887237_mars-hd-2in1-nutration-for-skin-foundation-golden-beige-f07-product-images-orvjaeibjcv-p603656924-1-202308051112.webp'
+           'https://www.jiomart.com/images/product/original/rvb4hk4ieq/glam21-high-definition-2in1-compact-powder-smooth-satin-texture-mate-finish-beige-product-images-orvb4hk4ieq-p601083853-0-202304300434.png?im=Resize=(420,420)',
+           'https://www.jiomart.com/images/product/original/rvb4hk4ieq/glam21-high-definition-2in1-compact-powder-smooth-satin-texture-mate-finish-beige-product-images-orvb4hk4ieq-p601083853-1-202304300434.png?im=Resize=(420,420)'
 
         ],
         category:'Beauty',
@@ -359,13 +346,13 @@ export const productList=[
 
 
      {
-      id:19,
+      id:18,
         name:'Nisha Creme Hair Color - 3.5 Chocolate Brown 60 gm',
         price:140,
         oldPrice:158,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729063222/1729063220485_nisha-creme-hair-color-3-5-chocolate-brown-60-gm-prod-o992688-p608316872-0-202403020848.jpg',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729063224/1729063220486_nisha-creme-hair-color-3-5-chocolate-brown-60-gm-prod-o992688-p608316872-1-202403020848.jpg'
+           'https://www.jiomart.com/images/product/original/rvcfkcyzfb/nisha-cream-permanent-hair-color-superior-quality-no-ammonia-cream-formula-permanent-fashion-highlights-and-rich-bright-long-lasting-colour-burgundy-pack-of-1-burgundy-3-16-product-images-orvcfkcyzfb-p604746005-0-202309221834.jpg?im=Resize=(420,420)',
+           'https://www.jiomart.com/images/product/original/rvcfkcyzfb/nisha-cream-permanent-hair-color-superior-quality-no-ammonia-cream-formula-permanent-fashion-highlights-and-rich-bright-long-lasting-colour-burgundy-pack-of-1-burgundy-3-16-product-images-orvcfkcyzfb-p604746005-1-202411261249.png?im=Resize=(420,420)'
 
         ],
         category:'Beauty',
@@ -381,13 +368,13 @@ export const productList=[
 
 
      {
-      id:20,
+      id:19,
         name:'Good Vaseline 10mmg',
         price:14,
         oldPrice:15,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729063289/1729063286588_vaseline-original-care-lip-therapy-17-g-product-images-o492367867-p590900289-0-202310140619.webp',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729063291/1729063286589_vaseline-original-care-lip-therapy-17-g-product-images-o492367867-p590900289-1-202310140619.jpg'
+           'https://www.jiomart.com/images/product/original/492367869/vaseline-rosy-lips-lip-therapy-17-g-product-images-o492367869-p590900291-0-202410031832.jpg?im=Resize=(420,420)',
+           'https://www.jiomart.com/images/product/original/492367869/vaseline-rosy-lips-lip-therapy-17-g-product-images-o492367869-p590900291-2-202410031832.jpg?im=Resize=(420,420)'
 
         ],
         category:'Beauty',
@@ -401,13 +388,13 @@ export const productList=[
      },
 
      {
-      id:21,
+      id:20,
         name:'Muuchstac Ocean Face Wash for Men, Fights Acne & Pimple, Skin Whitening & Brightening, All Skin Types, 100 Ml Each (Pack Of 2)',
         price:300,
         oldPrice:400,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729063341/1729063338381_muuchstac-ocean-face-wash-for-men-fights-acne-pimple-skin-whitening-brightening-all-skin-types-100-ml-each-pack-of-2-product-images-orvgtzrehky-p5969279.webp',
-          
+           'https://www.jiomart.com/images/product/original/rv8cj6lja3/muuchstac-ocean-face-wash-for-men-with-10x-skin-brightening-face-wash-for-fights-acne-pimples-oil-control-cooling-refreshing-feel-100ml-pack-of-1-product-images-orv8cj6lja3-p611336499-0-202504221507.jpg?im=Resize=(420,420)',
+           'https://www.jiomart.com/images/product/original/rv8cj6lja3/muuchstac-ocean-face-wash-for-men-with-10x-skin-brightening-face-wash-for-fights-acne-pimples-oil-control-cooling-refreshing-feel-100ml-pack-of-1-product-images-orv8cj6lja3-p611336499-1-202504221507.jpg?im=Resize=(420,420)'
         ],
         category:'Beauty',
         isFeature:'no',
@@ -420,13 +407,13 @@ export const productList=[
      },
 
      {
-      id:22,
+      id:21,
         name:'Nivea 24 hour Melt-in Moisture Caring Lip Balm, Cherry Shine 4.8 grras-demo',
         price:420,
         oldPrice:450,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729060807/1729060804222_nivea-24-hour-melt-in-moisture-caring-lip-balm-cherry-shine-4-8-g-product-images-o490180140-p490180140-0-202203170330_1.webp',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729060809/1729060804222_nivea-24-hour-melt-in-moisture-caring-lip-balm-cherry-shine-4-8-g-product-images-o490180140-p490180140-0-202203170330.webp'
+           'https://www.jiomart.com/images/product/original/490180140/nivea-24-hour-melt-in-moisture-caring-lip-balm-cherry-shine-4-8-g-product-images-o490180140-p490180140-0-202203170330.jpg?im=Resize=(420,420)',
+           'https://www.jiomart.com/images/product/original/490180140/nivea-24-hour-melt-in-moisture-caring-lip-balm-cherry-shine-4-8-g-product-images-o490180140-p490180140-1-202203170330.jpg?im=Resize=(420,420)'
 
         ],
         category:'Beauty',
@@ -441,13 +428,13 @@ export const productList=[
 
 
      {
-      id:23,
+      id:22,
         name:'LIVE FASHION Black Women PU Sling Bag',
         price:350,
         oldPrice:400,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729065554/1729065551604_flores-stylish-fashion-backpack-for-girls-and-boys-product-images-rv9zqkovyh-0-202405211637.jpg',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729065557/1729065551614_flores-stylish-fashion-backpack-for-girls-and-boys-product-images-rv9zqkovyh-1-202405211637.jpg'
+           'https://rukminim2.flixcart.com/image/612/612/xif0q/backpack/g/d/e/-original-imah9a2gcxajwzp4.jpeg',
+           'https://rukminim2.flixcart.com/image/612/612/xif0q/backpack/g/d/e/-original-imah9a2gcxajwzp4.jpeg'
 
         ],
         category:'Bags',
@@ -467,8 +454,8 @@ export const productList=[
         price:350,
         oldPrice:400,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729063000/1729062998890_fytona-medium-laptop-backpack-light-weight-for-school-collage-office-tuition-and-picnic-waterproof-backpack-blue-25-l-product-images-orvmjkuqezq-p607379380-0-202401161039.jpg',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729063002/1729062998891_fytona-medium-laptop-backpack-light-weight-for-school-collage-office-tuition-and-picnic-waterproof-backpack-blue-25-l-product-images-orvmjkuqezq-p607379380-3-202401161039.jpg'
+           'https://rukminim2.flixcart.com/image/612/612/xif0q/bag/c/z/u/school-bag-college-bag-travel-bag-with-pencil-pouch-2nd-std-original-imah37zhq9yzgmqh.jpeg',
+           'https://rukminim2.flixcart.com/image/612/612/xif0q/bag/c/z/u/school-bag-college-bag-travel-bag-with-pencil-pouch-2nd-std-original-imah37zhq9yzgmqh.jpeg'
 
         ],
         category:'Bags',
@@ -487,8 +474,8 @@ export const productList=[
         price:390,
         oldPrice:400,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729061152/1729061145352_fytona-medium-laptop-backpack-light-weight-for-school-collage-office-tuition-and-picnic-waterproof-backpack-grey-25-l-product-images-rvyoumccae-0-202402141853.jpg',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729061182/1729061145369_fytona-medium-laptop-backpack-light-weight-for-school-collage-office-tuition-and-picnic-waterproof-backpack-grey-25-l-product-images-rvyoumccae-2-202402141853.jpg'
+           'https://rukminim2.flixcart.com/image/612/612/xif0q/backpack/z/v/l/11-laptop-backpack-1006-unisex-spacy-with-rain-cover-and-original-imahyxt8hunpfzhf.jpeg',
+           'https://rukminim2.flixcart.com/image/612/612/xif0q/backpack/z/v/l/11-laptop-backpack-1006-unisex-spacy-with-rain-cover-and-original-imahyxt8hunpfzhf.jpeg'
 
         ],
         category:'Bags',
@@ -508,8 +495,8 @@ export const productList=[
         price:300,
         oldPrice:400,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729061726/1729061724288_live-fashion-black-women-pu-sling-bag-product-images-rvlrqnkwh2-0-202406040227.jpg',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729061728/1729061724291_live-fashion-black-women-pu-sling-bag-product-images-rvlrqnkwh2-1-202406040227.jpg'
+           'https://rukminim2.flixcart.com/image/612/612/xif0q/backpack/j/w/7/5-daypack-small-bags-for-daily-use-library-office-outdoor-hiking-original-imah2fmucyzs5bp2.jpeg',
+           'https://rukminim2.flixcart.com/image/612/612/xif0q/backpack/j/w/7/5-daypack-small-bags-for-daily-use-library-office-outdoor-hiking-original-imah2fmucyzs5bp2.jpeg'
 
         ],
         category:'Bags',
@@ -528,8 +515,8 @@ export const productList=[
         price:350,
         oldPrice:400,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729061842/1729061840848_ksc-khatushyam-collection-black-pu-for-women-handheld-bag-product-images-rvkg3apiuk-2-202405282358.jpg',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729061845/1729061840850_ksc-khatushyam-collection-grey-pu-for-women-handheld-bag-product-images-rvoxe6ocho-0-202405282359.webp'
+           'https://rukminim2.flixcart.com/image/612/612/xif0q/backpack/z/0/k/-original-imah9a2gtvggzbyg.jpeg',
+           'https://rukminim2.flixcart.com/image/612/612/xif0q/backpack/z/0/k/-original-imah9a2gtvggzbyg.jpeg'
 
         ],
         category:'Bags',
@@ -548,8 +535,8 @@ export const productList=[
         price:350,
         oldPrice:400,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729060492/1729060487993_zaaliqa-girls-black-handbag-product-images-rvd5gtvjgi-0-202404151052.jpg',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729060494/1729060488014_zaaliqa-girls-black-handbag-product-images-rvd5gtvjgi-1-202404151052.webp'
+           'https://rukminim2.flixcart.com/image/612/612/xif0q/backpack/7/h/9/8-vegan-casual-backpack-for-men-13-145-backpack-worng-40-19-original-imahak4h7xqefapt.jpeg',
+           'https://rukminim2.flixcart.com/image/612/612/xif0q/backpack/7/h/9/8-vegan-casual-backpack-for-men-13-145-backpack-worng-40-19-original-imahak4h7xqefapt.jpeg'
 
         ],
         category:'Bags',
@@ -568,8 +555,8 @@ export const productList=[
         price:650,
         oldPrice:700,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729062277/1729062274563_paragon-women-s-trendy-wedge-heel-sandals-with-cushioned-sole-and-sturdy-construction-for-everyday-use-product-images-rv9d1dhzig-0-202408051114.jpg',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729062282/1729062274591_paragon-women-s-trendy-wedge-heel-sandals-with-cushioned-sole-and-sturdy-construction-for-everyday-use-product-images-rv9d1dhzig-1-202408051114.jpg'
+           'https://www.jiomart.com/images/product/original/rvsqu3p7oa/paragon-puk7014l-women-sandals-casual-everyday-sandals-stylish-comfortable-durable-for-daily-occasion-wear-product-images-rvsqu3p7oa-0-202309191612.jpg?im=Resize=(600,750)',
+           'https://www.jiomart.com/images/product/original/rvsqu3p7oa/paragon-puk7014l-women-sandals-casual-everyday-sandals-stylish-comfortable-durable-for-daily-occasion-wear-product-images-rvsqu3p7oa-0-202309191612.jpg?im=Resize=(600,750)'
 
         ],
         category:'Footwear',
@@ -587,8 +574,8 @@ export const productList=[
         price:350,
         oldPrice:400,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729062536/1729062531145_aqualite-s-trendy-and-stylish-orange-flip-flops-slides-for-women-product-images-rvr9enxkgt-0-202304181628.jpg',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729062536/1729062531145_aqualite-s-trendy-and-stylish-orange-flip-flops-slides-for-women-product-images-rvr9enxkgt-0-202304181628.jpg'
+        ' https://www.jiomart.com/images/product/original/rvqdnvvrgo/aqualite-s-trendy-and-stylish-orange-flip-flops-slides-for-women-product-images-rvqdnvvrgo-0-202304181636.jpg?im=Resize=(600,750)',
+           'https://www.jiomart.com/images/product/original/rvqdnvvrgo/aqualite-s-trendy-and-stylish-orange-flip-flops-slides-for-women-product-images-rvqdnvvrgo-1-202304181636.jpg?im=Resize=(600,750)'
 
         ],
         category:'Footwear',
@@ -606,8 +593,8 @@ export const productList=[
         price:440,
         oldPrice:500,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729061283/1729061278212_denill-brown-bellies-for-women-product-images-rvrehaibat-0-202211050253.jpg',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729061286/1729061278214_denill-brown-bellies-for-women-product-images-rvrehaibat-1-202211050253.jpg'
+           'https://www.jiomart.com/images/product/original/rvwcnxxqn0/footerz-women-s-pink-sandal-product-images-rvwcnxxqn0-0-202205221329.jpg?im=Resize=(600,750)',
+           'https://www.jiomart.com/images/product/original/rvwcnxxqn0/footerz-women-s-pink-sandal-product-images-rvwcnxxqn0-2-202205221329.jpg?im=Resize=(600,750)'
 
         ],
         category:'Footwear',
@@ -625,8 +612,8 @@ export const productList=[
         price:350,
         oldPrice:400,
         images:[
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729061453/1729061444553_paragon-puk7014l-women-sandals-casual-everyday-sandals-stylish-comfortable-durable-for-daily-occasion-wear-product-images-rvsahbaae9-1-202309191619.jpg',
-           'https://res.cloudinary.com/dy2p0n2xc/image/upload/v1729061447/1729061444526_paragon-puk7014l-women-sandals-casual-everyday-sandals-stylish-comfortable-durable-for-daily-occasion-wear-product-images-rvsahbaae9-0-202309191618.jpg'
+           'https://www.jiomart.com/images/product/original/rvsahbaae9/paragon-puk7014l-women-sandals-casual-everyday-sandals-stylish-comfortable-durable-for-daily-occasion-wear-product-images-rvsahbaae9-0-202309191618.jpg?im=Resize=(600,750)',
+           'https://www.jiomart.com/images/product/original/rvsahbaae9/paragon-puk7014l-women-sandals-casual-everyday-sandals-stylish-comfortable-durable-for-daily-occasion-wear-product-images-rvsahbaae9-4-202309191619.jpg?im=Resize=(600,750)'
 
         ],
         category:'Footwear',

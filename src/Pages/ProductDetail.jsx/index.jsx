@@ -45,9 +45,9 @@ const ProductDetail = () => {
         setProductDetail(filteredProduct[0])
     },[id])
 
-    console.log(productDetail)
+   
 
-    const goTo = (img, index) => {
+    const goTo = (index) => {
         slideRef.current.slickGoTo(index);
         setSlideActive(index);
     };
